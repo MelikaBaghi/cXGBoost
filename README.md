@@ -5,7 +5,7 @@ Constrained Extreme Gradient Boosting for adapting reduced-order models.
 A proper orthogonal decomposition basis built at one parameter loses accuracy as
 the parameter moves, so the basis has to be predicted at conditions that were
 never simulated. A basis is a point on the Grassmann manifold, and existing
-predictors regress it in a logarithmic chart whose coordinate identifies a unique
+predictors regress it through a logarithmic mapping whose coordinate identifies a unique
 subspace only inside a ball of radius pi/2. They enforce that bound after
 fitting, or not at all.
 
@@ -27,10 +27,10 @@ from cxgboost import make_predictor
 # mu: (N, d) parameters.  Phi: list of N bases, each (n, r) with orthonormal columns.
 model = make_predictor("cxgboost", chart="exact").fit(mu, Phi)
 Phi_star = model.predict(mu_query)      # predicted basis at an unseen parameter
-y = model.predict_tangent(mu_query)     # its chart coordinate, ||y|| <= pi/2
+y = model.predict_tangent(mu_query)     # its mapped coordinate, ||y|| <= pi/2
 ```
 
-Pass `chart="pca"` when the exact chart is too large to form, which is the case
+Pass `chart="pca"` when the full coordinate is too large to form, which is the case
 whenever `n * r` is big. Pass `make_predictor("unconstrained")` for the
 constraint-off variant used in the paper's ablation.
 
@@ -38,7 +38,7 @@ constraint-off variant used in the paper's ablation.
 
 - `cxgboost/grassmann.py` holds the exponential and logarithmic maps, the
   principal angles, and the projection error used as the reported metric
-- `cxgboost/chart.py` builds the logarithmic chart and its PCA variant
+- `cxgboost/chart.py` builds the logarithmic mapping and its PCA variant
 - `cxgboost/boosting.py` is the constrained ensemble and the leaf projection
 - `cxgboost/predictor.py` is the `fit` and `predict` wrapper
 - `paper/cXGBoost_JCP.pdf` is the manuscript
