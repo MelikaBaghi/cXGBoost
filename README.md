@@ -50,6 +50,14 @@ the paper, Grassmann interpolation and the projected Gaussian process, are our
 reimplementations of published work and are not redistributed here; see the
 references in the manuscript for the original sources.
 
+## Citation
+
+If you use this code, please cite the manuscript in `paper/`.
+
+## Licence
+
+MIT. See `LICENSE`.
+
 ## Requirements
 
 Python 3.9 or later and NumPy. SciPy is used for the Gaussian-process baseline
