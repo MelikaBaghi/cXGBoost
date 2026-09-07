@@ -1,9 +1,9 @@
 """Constrained Extreme Gradient Boosting for adapting reduced-order bases.
 
 Predicting a parameter-dependent POD basis is regression whose output lives on
-the Grassmann manifold. Existing predictors regress in a logarithmic chart whose
-coordinate identifies a unique subspace only inside a ball of radius pi/2, and
-enforce that bound, if at all, after fitting. cXGBoost imposes it inside the
+the Grassmann manifold. Existing predictors regress through a logarithmic
+mapping whose coordinate identifies a unique subspace only inside a ball of
+radius pi/2, and enforce that bound, if at all, after fitting. cXGBoost imposes it inside the
 fit: every leaf of a vector-valued boosting ensemble solves a quadratically
 constrained sub-problem, which under the squared Euclidean loss is a Euclidean
 projection onto an intersection of balls.
