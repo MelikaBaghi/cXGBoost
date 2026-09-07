@@ -36,12 +36,12 @@ constraint-off variant used in the paper's ablation.
 
 ## Contents
 
-- `cxgboost/grassmann.py` — exponential and logarithmic maps, principal angles,
-  the projection error used as the reported metric
-- `cxgboost/chart.py` — the logarithmic chart and its PCA variant
-- `cxgboost/boosting.py` — the constrained ensemble and the leaf projection
-- `cxgboost/predictor.py` — the `fit`/`predict` wrapper
-- `paper/cXGBoost_JCP.pdf` — the manuscript
+- `cxgboost/grassmann.py` holds the exponential and logarithmic maps, the
+  principal angles, and the projection error used as the reported metric
+- `cxgboost/chart.py` builds the logarithmic chart and its PCA variant
+- `cxgboost/boosting.py` is the constrained ensemble and the leaf projection
+- `cxgboost/predictor.py` is the `fit` and `predict` wrapper
+- `paper/cXGBoost_JCP.pdf` is the manuscript
 
 ## Scope of this release
 
