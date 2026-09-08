@@ -1,18 +1,18 @@
-"""Charts: flatten a tangent vector ``Z`` (n x r) into a vector ``y`` the trees regress.
+"""Mappings: flatten a tangent vector ``Z`` (n x r) into a vector ``y`` the trees regress.
 
-The boosting constraint is stated as ``||y|| <= pi/2``, so a chart is only sound
-if it lets us recover ``||Z||`` from ``y``. Both charts here expose
-:meth:`Chart.tangent_norm`, which returns the exact Frobenius norm of the decoded
+The boosting constraint is stated as ``||y|| <= pi/2``, so a mapping is only sound
+if it lets us recover ``||Z||`` from ``y``. Both mappings here expose
+:meth:`Mapping.tangent_norm`, which returns the exact Frobenius norm of the decoded
 tangent vector without ever materialising it.
 
 Two implementations:
 
-``ExactChart``
+``ExactMapping``
     The paper's ``F`` matrix (Eq. 6), dimension ``m = nr - r``. Isometric, so
     ``||y|| == ||Z||_F``. Needs an ``(nr - r) x nr`` dense matrix -- fine for the
     cylinder (895 x 900), impossible for the wave (259 200 x 259 210 ~ 538 GB).
 
-``PCAChart``
+``PCAMapping``
     PCA over the training tangent vectors. With ``N`` training points at most
     ``N - 1`` directions carry variance, so ``m <= N - 1`` and the encoding is
     lossless *on the training set*. This is what every large benchmark uses.
@@ -26,7 +26,7 @@ from numpy.linalg import norm, svd
 from .grassmann import horizontal_basis
 
 
-class Chart:
+class Mapping:
     """Interface: an isometry-aware linear map between ``Z`` and ``y``."""
 
     dim: int
@@ -45,7 +45,7 @@ class Chart:
     def ball_params(self, radius: float) -> tuple[np.ndarray, float]:
         """Recast ``||decode(y)||_F <= radius`` as a ball ``||y + b|| <= rho`` in y-space.
 
-        The boosting solver only knows how to handle balls, so every chart has to
+        The boosting solver only knows how to handle balls, so every mapping has to
         report the ``(offset, effective_radius)`` pair that makes the constraint it
         enforces equal to the constraint we actually want.
         """
@@ -62,7 +62,7 @@ class Chart:
         ``reference="middle"`` the reference is itself a training point, so one
         tangent is exactly zero and a per-vector relative error divides roundoff
         by zero. Measuring the whole set against its own scale is what the
-        question, does the chart represent these tangents, actually asks.
+        question, does the mapping represent these tangents, actually asks.
         """
         Z_list = list(Z_list)
         if not Z_list:
@@ -77,8 +77,8 @@ class Chart:
         return worst
 
 
-class ExactChart(Chart):
-    """Isometric chart built from the horizontal basis ``F`` at ``Phi0``."""
+class ExactMapping(Mapping):
+    """Isometric mapping built from the horizontal basis ``F`` at ``Phi0``."""
 
     def __init__(self, Phi0: np.ndarray, F: np.ndarray | None = None):
         self.shape = Phi0.shape
@@ -91,7 +91,7 @@ class ExactChart(Chart):
         self.dim = self.F.shape[0]
 
     @classmethod
-    def from_file(cls, Phi0: np.ndarray, path) -> "ExactChart":
+    def from_file(cls, Phi0: np.ndarray, path) -> "ExactMapping":
         """Load a precomputed ``F_matrix.npy`` (the cylinder pipeline saves one)."""
         return cls(Phi0, F=np.load(path))
 
@@ -109,20 +109,20 @@ class ExactChart(Chart):
         return np.zeros(self.dim), float(radius)
 
 
-class PCAChart(Chart):
+class PCAMapping(Mapping):
     """PCA over training tangent vectors; exact norms via a small correction.
 
     With ``center=True`` (default) the encoding subtracts the tangent mean, so
     ``||y|| != ||Z||_F``. :meth:`tangent_norm` corrects for that exactly using the
     cached projection of the mean, which keeps the ``pi/2`` constraint meaningful.
-    Set ``center=False`` to make the chart a plain isometry at the cost of
+    Set ``center=False`` to make the mapping a plain isometry at the cost of
     spending one component on the mean direction.
     """
 
     def __init__(self, Z_train, max_dim: int = 20, center: bool = True):
         Z_train = list(Z_train)
         if not Z_train:
-            raise ValueError("PCAChart needs at least one training tangent vector")
+            raise ValueError("PCAMapping needs at least one training tangent vector")
         self.shape = Z_train[0].shape
         self.center = center
 
@@ -137,7 +137,7 @@ class PCAChart(Chart):
         # samples, diagonalise the sample-space Gram matrix instead of asking
         # LAPACK for the SVD of a very wide dense matrix in every CV fold.
         # C = U S V^T implies C C^T = U S^2 U^T and V = C^T U S^-1,
-        # so this is algebraically the same PCA chart, not an approximation.
+        # so this is algebraically the same PCA mapping, not an approximation.
         if C.shape[1] > 2 * C.shape[0]:
             eigvals, U = np.linalg.eigh(C @ C.T)
             order = np.argsort(eigvals)[::-1]
@@ -189,11 +189,11 @@ class PCAChart(Chart):
         if rho_sq <= 0:
             raise ValueError(
                 # the test is rho_sq <= 0, that is the component of the mean
-                # orthogonal to the chart subspace already fills the ball.
+                # orthogonal to the mapping subspace already fills the ball.
                 # ||mean|| >= radius is necessary for that but not sufficient,
                 # so quoting it alone misdescribed the condition that fired.
                 "the displaced ball is empty: the component of the training tangent "
-                "mean orthogonal to the chart subspace already fills the injectivity "
+                "mean orthogonal to the mapping subspace already fills the injectivity "
                 f"ball (||mean||={np.sqrt(self._mean_sq):.3f}, "
                 f"||V^T mean||={np.sqrt(float(b @ b)):.3f}, radius={radius:.3f}); "
                 "the reference basis is too far from the data"
@@ -201,12 +201,12 @@ class PCAChart(Chart):
         return b, float(np.sqrt(rho_sq))
 
 
-def build_chart(Phi0: np.ndarray, Z_train, kind: str = "auto", max_dim: int = 20,
-                center: bool = True, exact_max_dim: int = 4000) -> Chart:
-    """Pick a chart. ``"auto"`` uses ``ExactChart`` only when ``nr`` is small enough."""
+def build_mapping(Phi0: np.ndarray, Z_train, kind: str = "auto", max_dim: int = 20,
+                center: bool = True, exact_max_dim: int = 4000) -> Mapping:
+    """Pick a mapping. ``"auto"`` uses ``ExactMapping`` only when ``nr`` is small enough."""
     n, r = Phi0.shape
     if kind == "exact" or (kind == "auto" and n * r <= exact_max_dim):
-        return ExactChart(Phi0)
+        return ExactMapping(Phi0)
     if kind in ("auto", "pca"):
-        return PCAChart(Z_train, max_dim=max_dim, center=center)
-    raise ValueError(f"unknown chart kind {kind!r}")
+        return PCAMapping(Z_train, max_dim=max_dim, center=center)
+    raise ValueError(f"unknown mapping kind {kind!r}")

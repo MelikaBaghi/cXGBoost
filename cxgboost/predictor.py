@@ -4,8 +4,8 @@ Every method here follows the same three steps, and differs only in the middle
 one:
 
 1. lift the training bases into the tangent space at a reference ``Phi0``
-   (:func:`cxgboost.grassmann.log_map`) and flatten them through a chart;
-2. regress the chart coordinates against ``mu``;
+   (:func:`cxgboost.grassmann.log_map`) and flatten them through a mapping;
+2. regress the mapping coordinates against ``mu``;
 3. push the prediction back with the exponential map.
 
 Step 3 is only well defined when the prediction is inside the injectivity ball,
@@ -19,14 +19,14 @@ import numpy as np
 from numpy.linalg import norm
 
 from .boosting import CXGBoost
-from .chart import Chart, build_chart
+from .mapping import Mapping, build_mapping
 from .grassmann import PI_2, RHO, clip_to_ball, exp_map, log_map
 
 
 class SubspacePredictor:
     """Common interface: ``fit(mu, Phi_list)`` then ``predict(mu) -> Phi``."""
 
-    chart: Chart
+    mapping: Mapping
     Phi0: np.ndarray
 
     def fit(self, mu, Phi_list) -> "SubspacePredictor":
@@ -82,7 +82,7 @@ class SubspacePredictor:
 
 
 class CXGBoostSubspaceRegressor(SubspacePredictor):
-    """The proposed method: constrained boosting in chart coordinates.
+    """The proposed method: constrained boosting in mapping coordinates.
 
     ``constrained=False`` gives the ablation baseline (plain multivariate
     boosting); combine it with ``safeguard=True`` for the "unconstrained +
@@ -91,9 +91,9 @@ class CXGBoostSubspaceRegressor(SubspacePredictor):
 
     def __init__(
         self,
-        chart: str = "auto",
-        chart_dim: int = 20,
-        chart_center: bool = True,
+        mapping: str = "auto",
+        mapping_dim: int = 20,
+        mapping_center: bool = True,
         reference="middle",
         log_variant: str = "projected",
         radius: float = RHO,
@@ -101,9 +101,9 @@ class CXGBoostSubspaceRegressor(SubspacePredictor):
         safeguard: bool = True,
         **boost_kwargs,
     ):
-        self.chart_kind = chart
-        self.chart_dim = chart_dim
-        self.chart_center = chart_center
+        self.mapping_kind = mapping
+        self.mapping_dim = mapping_dim
+        self.mapping_center = mapping_center
         self.reference = reference
         self.log_variant = log_variant
         self.radius = radius
@@ -113,15 +113,15 @@ class CXGBoostSubspaceRegressor(SubspacePredictor):
 
     def fit(self, mu, Phi_list):
         mu = self._prepare(mu, Phi_list)
-        self.chart = build_chart(
+        self.mapping = build_mapping(
             self.Phi0,
             self.Z_train_,
-            kind=self.chart_kind,
-            max_dim=self.chart_dim,
-            center=self.chart_center,
+            kind=self.mapping_kind,
+            max_dim=self.mapping_dim,
+            center=self.mapping_center,
         )
-        y = self.chart.encode_all(self.Z_train_)
-        offset, rho = self.chart.ball_params(self.radius)
+        y = self.mapping.encode_all(self.Z_train_)
+        offset, rho = self.mapping.ball_params(self.radius)
         self.model_ = CXGBoost(
             constrained=self.constrained,
             constraint_radius=rho,
@@ -133,7 +133,7 @@ class CXGBoostSubspaceRegressor(SubspacePredictor):
     def predict_tangent(self, mu) -> np.ndarray:
         mu = np.atleast_2d(np.asarray(mu, dtype=float))
         y = self.model_.predict(mu)[0]
-        return self.chart.decode(y)
+        return self.mapping.decode(y)
 
     @property
     def stats(self):

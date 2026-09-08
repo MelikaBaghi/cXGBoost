@@ -9,7 +9,7 @@ constrained sub-problem, which under the squared Euclidean loss is a Euclidean
 projection onto an intersection of balls.
 
     from cxgboost import make_predictor
-    model = make_predictor("cxgboost", chart="exact").fit(mu_train, Phi_train)
+    model = make_predictor("cxgboost", mapping="exact").fit(mu_train, Phi_train)
     Phi_star = model.predict(mu_query)
 
 This release carries the proposed estimator only. The comparison methods in the
@@ -18,14 +18,14 @@ redistributed.
 """
 
 from .boosting import CXGBoost
-from .chart import Chart, PCAChart, build_chart
+from .mapping import Mapping, PCAMapping, build_mapping
 from .grassmann import (PI_2, clip_to_ball, exp_map, geodesic_distance, log_map,
                         orthonormalize, principal_angles, projection_error)
 from .predictor import CXGBoostSubspaceRegressor, SubspacePredictor, make_predictor
 
 __all__ = [
     "CXGBoost", "CXGBoostSubspaceRegressor", "SubspacePredictor",
-    "make_predictor", "Chart", "PCAChart", "build_chart",
+    "make_predictor", "Mapping", "PCAMapping", "build_mapping",
     "exp_map", "log_map", "principal_angles", "geodesic_distance",
     "projection_error", "orthonormalize", "clip_to_ball", "PI_2",
 ]

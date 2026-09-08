@@ -205,7 +205,7 @@ def horizontal_basis(Phi0: np.ndarray) -> np.ndarray:
     ``nr - r`` as the dimension of the horizontal space.
 
     Costs ``O(n^2 r)`` memory -- only usable for small ``n`` (the cylinder case).
-    Larger benchmarks use :class:`cxgboost.chart.PCAChart` instead.
+    Larger benchmarks use :class:`cxgboost.mapping.PCAMapping` instead.
     """
     n, r = Phi0.shape
     rows = []

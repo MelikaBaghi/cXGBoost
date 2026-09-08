@@ -1,7 +1,7 @@
 """cXGBoost: gradient boosting with vector-valued leaves constrained to a ball.
 
 Ordinary boosting fits scalar leaves; here every leaf emits a vector ``w`` in
-chart coordinates and the running prediction must stay inside the ball that
+mapping coordinates and the running prediction must stay inside the ball that
 makes the Grassmann exponential map injective. Enforcing that *during* training
 (rather than projecting afterwards) is the method's contribution.
 
@@ -118,9 +118,9 @@ class CXGBoost:
     constrained
         Turn the ball constraint off to get the ablation baseline.
     constraint_radius, constraint_offset
-        The ball is ``||y_i + offset + w|| <= radius``. A chart that centres its
+        The ball is ``||y_i + offset + w|| <= radius``. A mapping that centres its
         coordinates reports a non-zero offset so the constraint still refers to
-        ``||Z||_F``; see :meth:`cxgboost.chart.Chart.tangent_norm`.
+        ``||Z||_F``; see :meth:`cxgboost.mapping.Mapping.tangent_norm`.
     feature_subsample
         Fraction of features considered per node.
     """

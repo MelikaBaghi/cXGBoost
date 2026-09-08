@@ -25,12 +25,12 @@ import numpy as np
 from cxgboost import make_predictor
 
 # mu: (N, d) parameters.  Phi: list of N bases, each (n, r) with orthonormal columns.
-model = make_predictor("cxgboost", chart="exact").fit(mu, Phi)
+model = make_predictor("cxgboost", mapping="exact").fit(mu, Phi)
 Phi_star = model.predict(mu_query)      # predicted basis at an unseen parameter
 y = model.predict_tangent(mu_query)     # its mapped coordinate, ||y|| <= pi/2
 ```
 
-Pass `chart="pca"` when the full coordinate is too large to form, which is the case
+Pass `mapping="pca"` when the full coordinate is too large to form, which is the case
 whenever `n * r` is big. Pass `make_predictor("unconstrained")` for the
 constraint-off variant used in the paper's ablation.
 
@@ -38,7 +38,7 @@ constraint-off variant used in the paper's ablation.
 
 - `cxgboost/grassmann.py` holds the exponential and logarithmic maps, the
   principal angles, and the projection error used as the reported metric
-- `cxgboost/chart.py` builds the logarithmic mapping and its PCA variant
+- `cxgboost/mapping.py` builds the logarithmic mapping and its PCA variant
 - `cxgboost/boosting.py` is the constrained ensemble and the leaf projection
 - `cxgboost/predictor.py` is the `fit` and `predict` wrapper
 - `paper/cXGBoost_JCP.pdf` is the manuscript
