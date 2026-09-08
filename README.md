@@ -27,7 +27,7 @@ from cxgboost import make_predictor
 # mu: (N, d) parameters.  Phi: list of N bases, each (n, r) with orthonormal columns.
 model = make_predictor("cxgboost", mapping="exact").fit(mu, Phi)
 Phi_star = model.predict(mu_query)      # predicted basis at an unseen parameter
-y = model.predict_tangent(mu_query)     # its mapped coordinate, ||y|| <= pi/2
+Z = model.predict_tangent(mu_query)     # the decoded tangent, ||Z||_F <= pi/2
 ```
 
 Pass `mapping="pca"` when the full coordinate is too large to form, which is the case
