@@ -33,12 +33,24 @@ class SubspacePredictor:
         raise NotImplementedError
 
     def predict_tangent(self, mu) -> np.ndarray:
+        """Return the raw tangent produced by the fitted regression core."""
         raise NotImplementedError
 
-    def predict(self, mu) -> np.ndarray:
+    def predict_delivered_tangent(self, mu) -> np.ndarray:
+        """Return the tangent the complete predictor delivers.
+
+        ``predict_tangent`` is intentionally raw because the diagnostics need to
+        measure how often a regression core asks for correction.  This method is
+        the public feasibility boundary: when ``safeguard`` is enabled, its
+        result is inside the Frobenius ball for every query.
+        """
         Z = self.predict_tangent(mu)
         if self.safeguard:
             Z = clip_to_ball(Z, self.radius)
+        return Z
+
+    def predict(self, mu) -> np.ndarray:
+        Z = self.predict_delivered_tangent(mu)
         return exp_map(Z, self.Phi0)
 
     # -- shared setup ------------------------------------------------------
@@ -85,8 +97,9 @@ class CXGBoostSubspaceRegressor(SubspacePredictor):
     """The proposed method: constrained boosting in mapping coordinates.
 
     ``constrained=False`` gives the ablation baseline (plain multivariate
-    boosting); combine it with ``safeguard=True`` for the "unconstrained +
-    post-hoc projection" variant reported in the ablation.
+    boosting).  The paper's unconstrained arm also sets ``safeguard=False``;
+    combining it with ``safeguard=True`` would instead define a third,
+    repair-only variant.
     """
 
     def __init__(

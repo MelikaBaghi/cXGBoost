@@ -5,9 +5,9 @@ Constrained Extreme Gradient Boosting for adapting reduced-order models.
 A proper orthogonal decomposition basis built at one parameter loses accuracy as
 the parameter moves, so the basis has to be predicted at conditions that were
 never simulated. A basis is a point on the Grassmann manifold, and existing
-predictors regress it through a logarithmic mapping whose coordinate identifies a unique
-subspace only inside a ball of radius pi/2. They enforce that bound after
-fitting, or not at all.
+predictors regress it through a logarithmic mapping whose coordinate is guaranteed
+to identify a unique subspace inside a ball of radius pi/2. They enforce that
+bound after fitting, or not at all.
 
 cXGBoost imposes it during the fit. Every leaf of a vector-valued boosting
 ensemble solves a quadratically constrained sub-problem which, under the squared
@@ -15,8 +15,11 @@ Euclidean loss, is exactly a Euclidean projection of the ordinary leaf value ont
 an intersection of balls. That is available in closed form when one ball is
 active and by Dykstra's algorithm otherwise, so no general-purpose optimiser is
 called at any candidate split. The fitted ensemble satisfies the bound at every
-training parameter and at every truncation, and no correction is applied to the
-prediction.
+training parameter and at every truncation. At a new parameter the predictor
+checks the bound and, if the raw ensemble output lies outside it, shrinks the
+tangent back onto the ball before decoding (`safeguard=True`, the default). The
+paper reports how often that step acts, which is at two of 25 held-out
+parameters on one example and never on the other three.
 
 ## Use
 
