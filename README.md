@@ -44,18 +44,19 @@ constraint-off variant used in the paper's ablation.
 - `cxgboost/mapping.py` builds the logarithmic mapping and its PCA variant
 - `cxgboost/boosting.py` is the constrained ensemble and the leaf projection
 - `cxgboost/predictor.py` is the `fit` and `predict` wrapper
-- `paper/cXGBoost_JCP.pdf` is the manuscript
 
 ## Scope of this release
 
 This repository carries the proposed estimator. The two comparison methods in
 the paper, Grassmann interpolation and the projected Gaussian process, are our
-reimplementations of published work and are not redistributed here; see the
-references in the manuscript for the original sources.
+reimplementations of published work and are not redistributed here. The
+manuscript, currently under review, gives the original sources.
 
 ## Citation
 
-If you use this code, please cite the manuscript in `paper/`.
+If you use this code, please cite the manuscript, Baghi, Liu and Paynabar,
+Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models,
+under review.
 
 ## Licence
 
