@@ -1,0 +1,254 @@
+{
+  "cylinder": {
+    "arms": {
+      "cXGBoost": {
+        "mean": 0.06720304860937358,
+        "median": 0.07046503440799212,
+        "max": 0.142459710560913,
+        "leaf_active_fraction": 0.015202812878790698,
+        "frac_outside_ball": 0.0
+      },
+      "unconstrained + projection": {
+        "mean": 0.06722915810898575,
+        "median": 0.07044327286242306,
+        "max": 0.14260299433800736,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.0
+      },
+      "unconstrained boosting": {
+        "mean": 0.06722915810898575,
+        "median": 0.07044327286242306,
+        "max": 0.14260299433800736,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.0
+      },
+      "single constrained tree": {
+        "mean": 0.06788124304684175,
+        "median": 0.0743540086624026,
+        "max": 0.12637325786411313,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.0
+      }
+    },
+    "cxgboost_matches_table2": true,
+    "posthoc_refit_mean": 0.06722915810898575,
+    "posthoc_refit_matches_json": true,
+    "paired": {
+      "unconstrained + projection": {
+        "n": 42,
+        "other_mean": 0.06722915810898575,
+        "margin_of_cxgboost": 0.00038836570837078065,
+        "p_value": 0.2878622205335789,
+        "effect_size": -0.24307692307692308
+      },
+      "unconstrained boosting": {
+        "n": 42,
+        "other_mean": 0.06722915810898575,
+        "margin_of_cxgboost": 0.00038836570837078065,
+        "p_value": 0.2878622205335789,
+        "effect_size": -0.24307692307692308
+      },
+      "single constrained tree": {
+        "n": 42,
+        "other_mean": 0.06788124304684175,
+        "margin_of_cxgboost": 0.009990895968127378,
+        "p_value": 0.3146050399268461,
+        "effect_size": -0.1805094130675526
+      }
+    },
+    "paired_cxgboost_vs_posthoc": {
+      "p_value": 0.2878622205335789,
+      "effect_size": -0.24307692307692308
+    },
+    "margin_over_posthoc": 0.00038836570837078065
+  },
+  "beam": {
+    "arms": {
+      "cXGBoost": {
+        "mean": 0.08372961206693111,
+        "median": 0.04396823475972583,
+        "max": 0.24710349848084823,
+        "leaf_active_fraction": 0.5942367361782768,
+        "frac_outside_ball": 0.08
+      },
+      "unconstrained + projection": {
+        "mean": 0.1053019222545087,
+        "median": 0.07253110323129279,
+        "max": 0.42637943189399613,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.32
+      },
+      "unconstrained boosting": {
+        "mean": 0.11692297239170639,
+        "median": 0.07253110323129279,
+        "max": 0.4421762542132132,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.32
+      },
+      "single constrained tree": {
+        "mean": 0.06892125692851203,
+        "median": 0.0020100377503275545,
+        "max": 0.48371913003691547,
+        "leaf_active_fraction": 0.23225010283833813,
+        "frac_outside_ball": 0.0
+      }
+    },
+    "cxgboost_matches_table2": true,
+    "posthoc_refit_mean": 0.1053019222545087,
+    "posthoc_refit_matches_json": true,
+    "paired": {
+      "unconstrained + projection": {
+        "n": 25,
+        "other_mean": 0.1053019222545087,
+        "margin_of_cxgboost": 0.2048615041939933,
+        "p_value": 0.018744707107543945,
+        "effect_size": -0.5323076923076923
+      },
+      "unconstrained boosting": {
+        "n": 25,
+        "other_mean": 0.11692297239170639,
+        "margin_of_cxgboost": 0.2838908355286541,
+        "p_value": 0.012466490268707275,
+        "effect_size": -0.563076923076923
+      },
+      "single constrained tree": {
+        "n": 25,
+        "other_mean": 0.06892125692851203,
+        "margin_of_cxgboost": -0.21485904056826638,
+        "p_value": 0.24106645584106445,
+        "effect_size": 0.27384615384615385
+      }
+    },
+    "paired_cxgboost_vs_posthoc": {
+      "p_value": 0.018744707107543945,
+      "effect_size": -0.5323076923076923
+    },
+    "margin_over_posthoc": 0.2048615041939933
+  },
+  "kolmogorov": {
+    "arms": {
+      "cXGBoost": {
+        "mean": 0.6834927265300543,
+        "median": 0.7344911836693375,
+        "max": 0.9609176947721559,
+        "leaf_active_fraction": 0.9697547280866174,
+        "frac_outside_ball": 0.0
+      },
+      "unconstrained + projection": {
+        "mean": 0.708165176190275,
+        "median": 0.773200274921156,
+        "max": 0.9735759310079188,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.9714285714285715
+      },
+      "unconstrained boosting": {
+        "mean": 0.6876368260249244,
+        "median": 0.7666215752847757,
+        "max": 0.980790570178524,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.9714285714285715
+      },
+      "single constrained tree": {
+        "mean": 0.6706020552757943,
+        "median": 0.7366352284485789,
+        "max": 0.9639961767496621,
+        "leaf_active_fraction": 0.5926029526029526,
+        "frac_outside_ball": 0.0
+      }
+    },
+    "cxgboost_matches_table2": true,
+    "posthoc_refit_mean": 0.708165176190275,
+    "posthoc_refit_matches_json": true,
+    "paired": {
+      "unconstrained + projection": {
+        "n": 34,
+        "other_mean": 0.708165176190275,
+        "margin_of_cxgboost": 0.03483996458700684,
+        "p_value": 1.9435537979006767e-06,
+        "effect_size": -0.8487394957983193
+      },
+      "unconstrained boosting": {
+        "n": 34,
+        "other_mean": 0.6876368260249244,
+        "margin_of_cxgboost": 0.006026581675135353,
+        "p_value": 0.7612636568956077,
+        "effect_size": -0.06218487394957983
+      },
+      "single constrained tree": {
+        "n": 34,
+        "other_mean": 0.6706020552757943,
+        "margin_of_cxgboost": -0.01922253466544858,
+        "p_value": 0.054769040434621274,
+        "effect_size": 0.37815126050420167
+      }
+    },
+    "paired_cxgboost_vs_posthoc": {
+      "p_value": 1.9435537979006767e-06,
+      "effect_size": -0.8487394957983193
+    },
+    "margin_over_posthoc": 0.03483996458700684
+  },
+  "ks": {
+    "arms": {
+      "cXGBoost": {
+        "mean": 0.39568717097243533,
+        "median": 0.41888297549345466,
+        "max": 0.7352211494775006,
+        "leaf_active_fraction": 0.9346588824839251,
+        "frac_outside_ball": 0.0
+      },
+      "unconstrained + projection": {
+        "mean": 0.39712075770704075,
+        "median": 0.4288824771919319,
+        "max": 0.7322383665688377,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.9333333333333332
+      },
+      "unconstrained boosting": {
+        "mean": 0.3380951496219486,
+        "median": 0.34459454197053274,
+        "max": 0.7066761256245938,
+        "leaf_active_fraction": 0.0,
+        "frac_outside_ball": 0.9333333333333332
+      },
+      "single constrained tree": {
+        "mean": 0.3825035723632466,
+        "median": 0.4084562043310888,
+        "max": 0.6940120763807782,
+        "leaf_active_fraction": 0.5185960069255263,
+        "frac_outside_ball": 0.0
+      }
+    },
+    "cxgboost_matches_table2": true,
+    "posthoc_refit_mean": 0.39712075770704075,
+    "posthoc_refit_matches_json": true,
+    "paired": {
+      "unconstrained + projection": {
+        "n": 44,
+        "other_mean": 0.39712075770704075,
+        "margin_of_cxgboost": 0.0036099516501803906,
+        "p_value": 0.4277986254425059,
+        "effect_size": -0.1393939393939394
+      },
+      "unconstrained boosting": {
+        "n": 44,
+        "other_mean": 0.3380951496219486,
+        "margin_of_cxgboost": -0.17034264293612322,
+        "p_value": 0.0008987820353922871,
+        "effect_size": 0.5595959595959596
+      },
+      "single constrained tree": {
+        "n": 44,
+        "other_mean": 0.3825035723632466,
+        "margin_of_cxgboost": -0.034466602567227375,
+        "p_value": 0.05430527305850319,
+        "effect_size": 0.3333333333333333
+      }
+    },
+    "paired_cxgboost_vs_posthoc": {
+      "p_value": 0.4277986254425059,
+      "effect_size": -0.1393939393939394
+    },
+    "margin_over_posthoc": 0.0036099516501803906
+  }
+}

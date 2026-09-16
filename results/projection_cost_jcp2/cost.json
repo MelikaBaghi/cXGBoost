@@ -1,0 +1,110 @@
+{
+  "cylinder": {
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "exact",
+      "hyperparameters": {
+        "max_depth": 2,
+        "learning_rate": 0.1,
+        "n_estimators": 150
+      }
+    },
+    "coordinate_dim": [
+      895
+    ],
+    "mean_error": 0.06720304860937358,
+    "wall_s": 4.9,
+    "n_leaves": 4984,
+    "n_active_leaves": 78,
+    "n_active_solves": 1007,
+    "n_closed_form": 1007,
+    "n_dykstra": 0,
+    "dykstra_sweeps": 0,
+    "dykstra_balls": 0,
+    "closed_form_share": 1.0,
+    "sweeps_per_dykstra": null,
+    "balls_per_dykstra": null
+  },
+  "kolmogorov": {
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.3,
+        "max_depth": 3
+      }
+    },
+    "coordinate_dim": [
+      20
+    ],
+    "mean_error": 0.6834927265300543,
+    "wall_s": 466.1,
+    "n_leaves": 7858,
+    "n_active_leaves": 7621,
+    "n_active_solves": 86192,
+    "n_closed_form": 6111,
+    "n_dykstra": 80081,
+    "dykstra_sweeps": 10433040,
+    "dykstra_balls": 1032120,
+    "closed_form_share": 0.07089985149433822,
+    "sweeps_per_dykstra": 130.28109039597408,
+    "balls_per_dykstra": 12.888450443925525
+  },
+  "ks": {
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.3,
+        "max_depth": 4
+      }
+    },
+    "coordinate_dim": [
+      20
+    ],
+    "mean_error": 0.39568717097243533,
+    "wall_s": 712.4,
+    "n_leaves": 10932,
+    "n_active_leaves": 10220,
+    "n_active_solves": 122670,
+    "n_closed_form": 9141,
+    "n_dykstra": 113529,
+    "dykstra_sweeps": 16050162,
+    "dykstra_balls": 1472408,
+    "closed_form_share": 0.07451699682073856,
+    "sweeps_per_dykstra": 141.3749966968792,
+    "balls_per_dykstra": 12.969443930625655
+  },
+  "beam": {
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "max_depth": 4,
+        "learning_rate": 0.1,
+        "n_estimators": 50
+      }
+    },
+    "coordinate_dim": [
+      19
+    ],
+    "mean_error": 0.08372961206693111,
+    "wall_s": 7.0,
+    "n_leaves": 3182,
+    "n_active_leaves": 1885,
+    "n_active_solves": 16396,
+    "n_closed_form": 14106,
+    "n_dykstra": 2290,
+    "dykstra_sweeps": 457705,
+    "dykstra_balls": 9833,
+    "closed_form_share": 0.8603317882410344,
+    "sweeps_per_dykstra": 199.8711790393013,
+    "balls_per_dykstra": 4.293886462882096
+  }
+}

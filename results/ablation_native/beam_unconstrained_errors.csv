@@ -1,0 +1,26 @@
+method,benchmark,fold,mu,error
+unconstrained boosting,beam,0,9;9,0.0010749418888343837
+unconstrained boosting,beam,0,4;4,0.0002555972582582003
+unconstrained boosting,beam,0,6;4,0.3181779534220774
+unconstrained boosting,beam,0,6;6,0.00767993256900163
+unconstrained boosting,beam,0,7;5,0.14968262172421434
+unconstrained boosting,beam,1,5;9,0.07934296932004377
+unconstrained boosting,beam,1,4;6,0.4421762542132132
+unconstrained boosting,beam,1,8;8,0.00035227113563493143
+unconstrained boosting,beam,1,5;7,0.1026907516429607
+unconstrained boosting,beam,1,7;7,0.00019636497338042344
+unconstrained boosting,beam,2,3;9,0.053291959064623466
+unconstrained boosting,beam,2,3;3,9.649966007958101e-05
+unconstrained boosting,beam,2,6;8,0.07253110323129279
+unconstrained boosting,beam,2,4;8,0.21567025436620899
+unconstrained boosting,beam,2,9;3,0.022621589741167857
+unconstrained boosting,beam,3,5;5,0.00031537316340931394
+unconstrained boosting,beam,3,7;9,0.21996052078622266
+unconstrained boosting,beam,3,9;7,0.2833922753888912
+unconstrained boosting,beam,3,8;6,0.28185820654058036
+unconstrained boosting,beam,3,3;7,0.0751528159257478
+unconstrained boosting,beam,4,5;3,0.26158456099025235
+unconstrained boosting,beam,4,8;4,0.02600006873237474
+unconstrained boosting,beam,4,3;5,0.24002662964540844
+unconstrained boosting,beam,4,9;5,0.004421884530182472
+unconstrained boosting,beam,4,7;3,0.06452090987859825

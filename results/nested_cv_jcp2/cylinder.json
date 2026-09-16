@@ -1,0 +1,151 @@
+{
+  "case": "cylinder",
+  "n_points": 42,
+  "snapshot_mode": "native",
+  "mapping": "exact",
+  "log_variant": "projected",
+  "protocol": {
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "outer_seed": 42,
+    "inner_seed": 7,
+    "grid_size": 27
+  },
+  "table1_setting": {
+    "max_depth": 2,
+    "learning_rate": 0.1,
+    "n_estimators": 150
+  },
+  "summary": {
+    "n": 42,
+    "mean": 0.06711031182308792,
+    "std": 0.025059094731989685,
+    "median": 0.06901154569544887,
+    "p90": 0.09502085123340866,
+    "p95": 0.10302104862210128,
+    "max": 0.14001879449642,
+    "min": 0.017501146034301474
+  },
+  "per_fold_mean": [
+    0.06990280938332508,
+    0.07549209784330252,
+    0.06701525250865915,
+    0.06017858095356745,
+    0.06156603297902893
+  ],
+  "selections": [
+    {
+      "fold": 0,
+      "config_index": 19,
+      "config": {
+        "n_estimators": 300,
+        "learning_rate": 0.1,
+        "max_depth": 3
+      },
+      "inner_mean": 0.06994967042304436,
+      "inner_runner_up": 0.06995079302780785,
+      "outer_mean": 0.06990280938332508,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.4268202566423376,
+        "tangent_norm_median": 0.852178800246346,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.0,
+        "n_leaves": 2344
+      },
+      "n_train": 33,
+      "n_test": 9
+    },
+    {
+      "fold": 1,
+      "config_index": 1,
+      "config": {
+        "n_estimators": 50,
+        "learning_rate": 0.1,
+        "max_depth": 3
+      },
+      "inner_mean": 0.06749979535738428,
+      "inner_runner_up": 0.06765871650485406,
+      "outer_mean": 0.07549209784330252,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.182773791217919,
+        "tangent_norm_median": 0.9327123655663194,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.05745341614906832,
+        "n_leaves": 644
+      },
+      "n_train": 33,
+      "n_test": 9
+    },
+    {
+      "fold": 2,
+      "config_index": 15,
+      "config": {
+        "n_estimators": 150,
+        "learning_rate": 0.5,
+        "max_depth": 2
+      },
+      "inner_mean": 0.0691662753629666,
+      "inner_runner_up": 0.0691662753629666,
+      "outer_mean": 0.06701525250865915,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.41857097832169,
+        "tangent_norm_median": 1.1708101926374397,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.0,
+        "n_leaves": 628
+      },
+      "n_train": 34,
+      "n_test": 8
+    },
+    {
+      "fold": 3,
+      "config_index": 2,
+      "config": {
+        "n_estimators": 50,
+        "learning_rate": 0.1,
+        "max_depth": 4
+      },
+      "inner_mean": 0.07208118933740859,
+      "inner_runner_up": 0.07223515790465819,
+      "outer_mean": 0.06017858095356745,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.4663017322836647,
+        "tangent_norm_median": 0.8433257470703428,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.06030150753768844,
+        "n_leaves": 796
+      },
+      "n_train": 34,
+      "n_test": 8
+    },
+    {
+      "fold": 4,
+      "config_index": 9,
+      "config": {
+        "n_estimators": 150,
+        "learning_rate": 0.1,
+        "max_depth": 2
+      },
+      "inner_mean": 0.07097890868473226,
+      "inner_runner_up": 0.07101960600649211,
+      "outer_mean": 0.06156603297902893,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.4168438203936407,
+        "tangent_norm_median": 1.2604086407999828,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.009278350515463918,
+        "n_leaves": 970
+      },
+      "n_train": 34,
+      "n_test": 8
+    }
+  ],
+  "n_distinct_configs": 5,
+  "folds_selecting_table1": 1,
+  "cell_wall_s_total": 525.838599496521
+}

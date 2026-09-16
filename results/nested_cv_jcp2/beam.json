@@ -1,0 +1,151 @@
+{
+  "case": "beam",
+  "n_points": 25,
+  "snapshot_mode": "native",
+  "mapping": "pca",
+  "log_variant": "projected",
+  "protocol": {
+    "outer_folds": 5,
+    "inner_folds": 4,
+    "outer_seed": 42,
+    "inner_seed": 7,
+    "grid_size": 27
+  },
+  "table1_setting": {
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "n_estimators": 50
+  },
+  "summary": {
+    "n": 25,
+    "mean": 0.09214599822121185,
+    "std": 0.10590488276725601,
+    "median": 0.053134920009790684,
+    "p90": 0.18938806209329526,
+    "p95": 0.2976106405087617,
+    "max": 0.4015414853450576,
+    "min": 9.875943244972441e-05
+  },
+  "per_fold_mean": [
+    0.08785193063705896,
+    0.09435876001658458,
+    0.05167640014090754,
+    0.12320874399994279,
+    0.10363415631156533
+  ],
+  "selections": [
+    {
+      "fold": 0,
+      "config_index": 1,
+      "config": {
+        "n_estimators": 50,
+        "learning_rate": 0.1,
+        "max_depth": 3
+      },
+      "inner_mean": 0.1780851115588682,
+      "inner_runner_up": 0.18404098257244428,
+      "outer_mean": 0.08785193063705896,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.140248179635121,
+        "tangent_norm_median": 0.8564996034486844,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.38783269961977185,
+        "n_leaves": 526
+      },
+      "n_train": 20,
+      "n_test": 5
+    },
+    {
+      "fold": 1,
+      "config_index": 9,
+      "config": {
+        "n_estimators": 150,
+        "learning_rate": 0.1,
+        "max_depth": 2
+      },
+      "inner_mean": 0.05274582724603901,
+      "inner_runner_up": 0.05325328300377265,
+      "outer_mean": 0.09435876001658458,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.5477617218825204,
+        "tangent_norm_median": 1.2528532757080482,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.7618110236220472,
+        "n_leaves": 1016
+      },
+      "n_train": 20,
+      "n_test": 5
+    },
+    {
+      "fold": 2,
+      "config_index": 17,
+      "config": {
+        "n_estimators": 150,
+        "learning_rate": 0.5,
+        "max_depth": 4
+      },
+      "inner_mean": 0.11159464622882004,
+      "inner_runner_up": 0.11159464622882004,
+      "outer_mean": 0.05167640014090754,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.1177854538075485,
+        "tangent_norm_median": 0.9595327862259704,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.822289156626506,
+        "n_leaves": 996
+      },
+      "n_train": 20,
+      "n_test": 5
+    },
+    {
+      "fold": 3,
+      "config_index": 24,
+      "config": {
+        "n_estimators": 300,
+        "learning_rate": 0.5,
+        "max_depth": 2
+      },
+      "inner_mean": 0.1404479955267871,
+      "inner_runner_up": 0.1404548947557146,
+      "outer_mean": 0.12320874399994279,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.5472337997896644,
+        "tangent_norm_median": 1.3180366808914847,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.8681506849315068,
+        "n_leaves": 584
+      },
+      "n_train": 20,
+      "n_test": 5
+    },
+    {
+      "fold": 4,
+      "config_index": 1,
+      "config": {
+        "n_estimators": 50,
+        "learning_rate": 0.1,
+        "max_depth": 3
+      },
+      "inner_mean": 0.08742699983759053,
+      "inner_runner_up": 0.09093111512657863,
+      "outer_mean": 0.10363415631156533,
+      "outer_diagnostics": {
+        "tangent_norm_max": 1.5685832584490806,
+        "tangent_norm_median": 1.0223816145410243,
+        "frac_outside_ball": 0.0,
+        "frac_outside_ball_spectral": 0.0,
+        "leaf_active_fraction": 0.6338912133891214,
+        "n_leaves": 478
+      },
+      "n_train": 20,
+      "n_test": 5
+    }
+  ],
+  "n_distinct_configs": 4,
+  "folds_selecting_table1": 0,
+  "cell_wall_s_total": 7161.737805411685
+}

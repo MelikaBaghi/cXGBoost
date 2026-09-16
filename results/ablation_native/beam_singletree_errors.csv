@@ -1,0 +1,26 @@
+method,benchmark,fold,mu,error
+single constrained tree,beam,0,9;9,0.0020100377503275545
+single constrained tree,beam,0,4;4,3.5033504958154834e-05
+single constrained tree,beam,0,6;4,0.48371913003691547
+single constrained tree,beam,0,6;6,0.011989896582759042
+single constrained tree,beam,0,7;5,0.0007842308480576053
+single constrained tree,beam,1,5;9,0.0017825350060286325
+single constrained tree,beam,1,4;6,0.4319108413100113
+single constrained tree,beam,1,8;8,0.00025842083224956157
+single constrained tree,beam,1,5;7,0.001949440297425108
+single constrained tree,beam,1,7;7,0.0002174348354525579
+single constrained tree,beam,2,3;9,0.001055561694153261
+single constrained tree,beam,2,3;3,0.00014195439045246576
+single constrained tree,beam,2,6;8,0.0049184771638533875
+single constrained tree,beam,2,4;8,0.004301788984909935
+single constrained tree,beam,2,9;3,0.0009725922530734686
+single constrained tree,beam,3,5;5,0.0009403652383101251
+single constrained tree,beam,3,7;9,0.19911859692905426
+single constrained tree,beam,3,9;7,0.003687973217924768
+single constrained tree,beam,3,8;6,0.015195377570325491
+single constrained tree,beam,3,3;7,0.18175947394113187
+single constrained tree,beam,4,5;3,0.1859741032658328
+single constrained tree,beam,4,8;4,0.002187578365021316
+single constrained tree,beam,4,3;5,0.18596227011629204
+single constrained tree,beam,4,9;5,0.0011228232894131432
+single constrained tree,beam,4,7;3,0.0010354857888675512

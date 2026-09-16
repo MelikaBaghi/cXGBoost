@@ -44,6 +44,8 @@ constraint-off variant used in the paper's ablation.
 - `cxgboost/mapping.py` builds the logarithmic mapping and its PCA variant
 - `cxgboost/boosting.py` is the constrained ensemble and the leaf projection
 - `cxgboost/predictor.py` is the `fit` and `predict` wrapper
+- `results/` holds the result files behind every table and figure of the
+  manuscript, see `results/README.md`
 
 ## Scope of this release
 

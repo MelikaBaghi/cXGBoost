@@ -1,0 +1,57 @@
+{
+  "ks": {
+    "case": "ks",
+    "reference": "middle",
+    "mapping_dim": 40,
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.3,
+        "max_depth": 4
+      }
+    },
+    "cXGBoost": {
+      "accuracy": {
+        "n": 44,
+        "mean": 0.390919066877971,
+        "std": 0.2006463431848436,
+        "median": 0.42381939519992284,
+        "p90": 0.630744606346445,
+        "p95": 0.6750652317690787,
+        "max": 0.745556769924005,
+        "min": 0.024488479960136252
+      },
+      "validity": {
+        "n_queries": 44,
+        "n_outside": 0,
+        "max_ratio": 0.9999914461931241,
+        "n_outside_spectral": 0,
+        "leaf_active_fraction": 0.9533454184071675
+      },
+      "wall_s": 1376.2
+    },
+    "unconstrained": {
+      "accuracy": {
+        "n": 44,
+        "mean": 0.29801466767882695,
+        "std": 0.23249142899182226,
+        "median": 0.32174531887796853,
+        "p90": 0.6039496788275025,
+        "p95": 0.6755693849635357,
+        "max": 0.7076136029069441,
+        "min": 0.011205669107160228
+      },
+      "validity": {
+        "n_queries": 44,
+        "n_outside": 43,
+        "max_ratio": 2.3368574934793513,
+        "n_outside_spectral": 3,
+        "leaf_active_fraction": 0.0
+      },
+      "wall_s": 3.6
+    }
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "benchmark": "kolmogorov",
+  "n_points": 34,
+  "shape": [
+    1024,
+    6
+  ],
+  "folds": 5,
+  "seed": 42,
+  "log_variant": "projected",
+  "snapshot_mode": "native",
+  "truncation_floor": 0.13652388658111866,
+  "chart": "pca",
+  "hyperparameters": {
+    "n_estimators": 150,
+    "learning_rate": 0.3,
+    "max_depth": 3
+  },
+  "summary": {
+    "cXGBoost": {
+      "n": 34,
+      "mean": 0.6834927265300543,
+      "std": 0.2544378870768874,
+      "median": 0.7344911836693375,
+      "p90": 0.9279061249458002,
+      "p95": 0.9503160748377042,
+      "max": 0.9609176947721559,
+      "min": 0.11134478427925816
+    },
+    "Interpolation": {
+      "n": 34,
+      "mean": 0.8942244030251445,
+      "std": 0.0858654084113398,
+      "median": 0.928121476113309,
+      "p90": 0.9718436846296584,
+      "p95": 0.9754054568633823,
+      "max": 0.9871646496650237,
+      "min": 0.6670453672441992
+    },
+    "pGP": {
+      "n": 34.0,
+      "mean": 0.695143304819364,
+      "std": 0.22932478317086252,
+      "median": 0.754062094518468,
+      "p90": 0.9237388053959531,
+      "p95": 0.938168218564989,
+      "max": 0.9425076081286721,
+      "min": 0.19070672796151997
+    }
+  },
+  "diagnostics": {
+    "cXGBoost": {
+      "tangent_norm_max": 1.5706942009531928,
+      "tangent_norm_median": 1.5706001738423532,
+      "frac_outside_ball": 0.0,
+      "frac_outside_ball_spectral": 0.0,
+      "leaf_active_fraction": 0.9697547280866174,
+      "n_leaves": 1571.6
+    },
+    "Interpolation": {
+      "tangent_norm_max": 820526626.508244,
+      "tangent_norm_median": 521907.7412396148,
+      "frac_outside_ball": 1.0,
+      "frac_outside_ball_spectral": 1.0
+    },
+    "pGP": {
+      "tangent_norm_max": 0.8938986714683784,
+      "tangent_norm_median": 0.8636986724726896,
+      "frac_outside_ball": 0.0,
+      "frac_outside_ball_spectral": 0.0
+    }
+  },
+  "paired_test": {
+    "n": 34,
+    "statistic": 10.0,
+    "p_value": 5.005858838558197e-09,
+    "effect_size": -0.9663865546218487,
+    "median_diff": -0.15041156841610454
+  }
+}

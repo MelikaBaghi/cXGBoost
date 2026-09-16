@@ -100,6 +100,18 @@ class FitStats:
     #: counts accepted nodes alone, mixes two populations and understates the
     #: denominator. This counter shares the denominator's population.
     n_accepted_fallbacks: int = 0
+    #: Cost counters over *every* constrained leaf solve, candidate splits
+    #: included, which is the population that drives the fitting time.
+    #: ``n_active_solves`` is the number of solves where at least one ball was
+    #: violated, ``n_closed_form`` those settled by the single-ball closed
+    #: form, ``n_dykstra`` those that went to Dykstra, ``dykstra_sweeps`` the
+    #: total number of alternating-projection sweeps and ``dykstra_balls`` the
+    #: total size of the active sets Dykstra was run on.
+    n_active_solves: int = 0
+    n_closed_form: int = 0
+    n_dykstra: int = 0
+    dykstra_sweeps: int = 0
+    dykstra_balls: int = 0
 
     @property
     def active_fraction(self) -> float:
@@ -190,9 +202,11 @@ class CXGBoost:
             return self._qcqp(G, H, centres, rho, w), True
 
         # "auto": try the closed form for a single active ball, then Dykstra.
+        self._stats.n_active_solves += 1
         for i in violated:
             cand = self._project_onto_ball(w, centres[i], rho)
             if _within(centres, cand, rho):
+                self._stats.n_closed_form += 1
                 return cand, True
 
         # Active set: alternate over the balls that are actually violated, then
@@ -203,8 +217,11 @@ class CXGBoost:
         # and the sweep is repeated, so the returned point is checked against
         # every constraint either way.
         active = list(violated)
+        self._stats.n_dykstra += 1
         for _ in range(len(centres) + 1):
-            cand = self._dykstra(w, centres[active], rho)
+            cand, sweeps = self._dykstra(w, centres[active], rho)
+            self._stats.dykstra_sweeps += sweeps
+            self._stats.dykstra_balls += len(active)
             d = centres + cand
             sq = np.einsum("ij,ij->i", d, d)
             bad = np.where(sq > rho * rho + 1e-9)[0]
@@ -223,13 +240,17 @@ class CXGBoost:
 
         Converges to the Euclidean projection of ``w`` (unlike plain cyclic
         projection, which only finds *some* point in the intersection).
+        Returns ``(x, sweeps)``, the projection and the number of sweeps over
+        the balls it took.
         """
         m = centres.shape[0]
         x = w.copy()
         corr = np.zeros((m, w.shape[0]))
         prev = np.empty_like(x)
         rho2 = rho * rho
+        sweeps = 0
         for _ in range(max_iter):
+            sweeps += 1
             prev[:] = x
             for i in range(m):
                 ci = centres[i]
@@ -245,7 +266,7 @@ class CXGBoost:
             diff = x - prev
             if _nrm(diff) <= tol * (1.0 + _nrm(x)):
                 break
-        return x
+        return x, sweeps
 
     @staticmethod
     def _project_onto_ball(w: np.ndarray, centre: np.ndarray, rho: float) -> np.ndarray:
