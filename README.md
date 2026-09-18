@@ -57,7 +57,7 @@ manuscript, currently under review, gives the original sources.
 ## Citation
 
 If you use this code, please cite the manuscript, Baghi, Liu and Paynabar,
-Constrained Extreme Gradient Boosting for Adapting Reduced-Order Models,
+Constrained Extreme Gradient Boosting for Parametric POD Subspace Prediction,
 under review.
 
 ## Licence
