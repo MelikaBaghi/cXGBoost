@@ -13,7 +13,6 @@ the stored snapshots at that parameter, one row per held-out parameter.
 | `ablation_stability/` | Table 5, Figure 11 | raw-coordinate diagnostics of the constrained and unconstrained models (`<case>_stability.json`) and the stage-wise norms drawn in Figure 11 (`stage_trajectories.json`) |
 | `ablation_native/` | Table 6 | the four versions of the boosting model and their paired tests (`compare.json`, `*_errors.csv`) |
 | `sensitivity_jcp2/` | Section 4.1 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`) |
-| `projection_cost_jcp2/` | Section 4.4 | solver counters of the five-fold fits (`cost.json`) |
 | `audit/` | Section 4.3 | base-score and leaf-combination facts at held-out parameters (`heldout_gap.json`) |
 
 Fold partitions are `kfold(n, 5, seed=42)` in dataset order, so rows with the
