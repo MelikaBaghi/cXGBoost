@@ -1,0 +1,57 @@
+{
+  "kolmogorov": {
+    "case": "kolmogorov",
+    "reference": "middle",
+    "mapping_dim": 40,
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.3,
+        "max_depth": 3
+      }
+    },
+    "cXGBoost": {
+      "accuracy": {
+        "n": 34,
+        "mean": 0.7122074278526056,
+        "std": 0.23763076047359724,
+        "median": 0.7882439879460695,
+        "p90": 0.9353974055517288,
+        "p95": 0.9582984544250783,
+        "max": 0.9733199180030667,
+        "min": 0.19329922543060504
+      },
+      "validity": {
+        "n_queries": 34,
+        "n_outside": 0,
+        "max_ratio": 0.9999762835938389,
+        "n_outside_spectral": 0,
+        "leaf_active_fraction": 0.9692644759497057
+      },
+      "wall_s": 503.4
+    },
+    "unconstrained": {
+      "accuracy": {
+        "n": 34,
+        "mean": 0.6867807397251848,
+        "std": 0.28815318284284186,
+        "median": 0.7816401519735362,
+        "p90": 0.9464040403537538,
+        "p95": 0.9543592905617209,
+        "max": 0.9772720852175238,
+        "min": 0.018741716680309356
+      },
+      "validity": {
+        "n_queries": 34,
+        "n_outside": 33,
+        "max_ratio": 2.076504178354275,
+        "n_outside_spectral": 0,
+        "leaf_active_fraction": 0.0
+      },
+      "wall_s": 3.7
+    }
+  }
+}
