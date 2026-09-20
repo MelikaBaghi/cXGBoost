@@ -1,0 +1,245 @@
+[
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04714374259968766,
+    "loo_max": 0.09602914987697166
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.3,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04753226964646479,
+    "loo_max": 0.09625214375178717
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04762770535015942,
+    "loo_max": 0.09685837455887619
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04765050605392736,
+    "loo_max": 0.09436932489628717
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04769044405311413,
+    "loo_max": 0.09561718486270328
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.5,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04769111214899565,
+    "loo_max": 0.09742905434543506
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.047806601508535156,
+    "loo_max": 0.09714487052460576
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.3,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04789117818547725,
+    "loo_max": 0.09716433820109237
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.3,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04823645177851591,
+    "loo_max": 0.09726317163155804
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.3,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.04823645177938088,
+    "loo_max": 0.09726317163155804
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.1,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04824870688632659,
+    "loo_max": 0.09302515937271119
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04835843590076928,
+    "loo_max": 0.09717904049205912
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.5,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.048371351707776115,
+    "loo_max": 0.0974588800751843
+  },
+  {
+    "hp": {
+      "max_depth": 2,
+      "learning_rate": 0.5,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.048371351707776115,
+    "loo_max": 0.0974588800751843
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.1,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.04840670684964428,
+    "loo_max": 0.09723238791819193
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.3,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.04846116346120726,
+    "loo_max": 0.09727000880378175
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.3,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.0486718517870461,
+    "loo_max": 0.09724339602198818
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.3,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.0486718517870461,
+    "loo_max": 0.09724339602198818
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.1,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.048693738226231575,
+    "loo_max": 0.09717943040803921
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.5,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.0487401910645887,
+    "loo_max": 0.0972856306296565
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.5,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.0487401910645887,
+    "loo_max": 0.0972856306296565
+  },
+  {
+    "hp": {
+      "max_depth": 3,
+      "learning_rate": 0.5,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.0487493317761615,
+    "loo_max": 0.0972856306286354
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.3,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04882175228824855,
+    "loo_max": 0.09727310783926679
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.3,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.04882175228824855,
+    "loo_max": 0.0972731078392668
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.5,
+      "n_estimators": 150
+    },
+    "loo_mean": 0.04893652542478978,
+    "loo_max": 0.09723536201745826
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.5,
+      "n_estimators": 300
+    },
+    "loo_mean": 0.04893652542478978,
+    "loo_max": 0.09723536201745826
+  },
+  {
+    "hp": {
+      "max_depth": 4,
+      "learning_rate": 0.5,
+      "n_estimators": 50
+    },
+    "loo_mean": 0.048936525430017974,
+    "loo_max": 0.0972353620172583
+  }
+]

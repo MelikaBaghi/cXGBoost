@@ -14,6 +14,10 @@ the stored snapshots at that parameter, one row per held-out parameter.
 | `ablation_native/` | Table 6 errors | the three versions of the boosting model in Table 6, a single constrained tree, and their paired tests (`compare.json`, `*_errors.csv`) |
 | `sensitivity_jcp2/` | Sections 3 and 4.3 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`) |
 | `projection_cost_jcp2/` | Section 2.7 | a separate refit of the Table 2 cXGBoost fits with counters in the leaf solver (`cost_fallbacks.json`): active solves, closed-form solves, Dykstra calls, sweeps, and the calls at which the scaled iterate replaced the projection. Its `wall_s` is the time of that refit, not the Table 6 fit time |
+| `benchmark_r12/` | Section 3, rank check | Kolmogorov refitted at rank 12 (`kolmogorov_errors.csv`, `kolmogorov_summary.json`) |
+| `rank_energy/` | Section 3, snapshot energy | share of snapshot energy held by the fixed POD rank at every parameter (`rank_energy.json`) |
+| `tuning/` | Table 1 | the leave-one-out grid search on the cylinder and beam development splits and the settings it selected (`cylinder_grid.json`, `beam_grid.json`, `best.json`) |
+| `audit/coordinate_energy_folds.json` | Section 3, coordinate energy | share of coordinate energy kept by the PCA reduction inside each training fold |
 | `audit/` | Sections 4.1 and 4.3 | the largest principal angle and Euclidean norm of every full-sweep target (`spectral_vs_frobenius.json`) and base-score and leaf-combination facts at held-out parameters (`heldout_gap.json`) |
 
 Fold partitions are `kfold(n, 5, seed=42)` in dataset order, so rows with the

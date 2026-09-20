@@ -1,0 +1,98 @@
+{
+  "kolmogorov": {
+    "folds": [
+      {
+        "n_train": 27,
+        "realised": 20,
+        "retained_energy": 0.8729430763346857
+      },
+      {
+        "n_train": 27,
+        "realised": 20,
+        "retained_energy": 0.871491154503923
+      },
+      {
+        "n_train": 27,
+        "realised": 20,
+        "retained_energy": 0.8674923387566215
+      },
+      {
+        "n_train": 27,
+        "realised": 20,
+        "retained_energy": 0.8685528944699588
+      },
+      {
+        "n_train": 28,
+        "realised": 20,
+        "retained_energy": 0.8404069448687684
+      }
+    ],
+    "mean": 0.8641772817867915,
+    "min": 0.8404069448687684,
+    "max": 0.8729430763346857
+  },
+  "ks": {
+    "folds": [
+      {
+        "n_train": 35,
+        "realised": 20,
+        "retained_energy": 0.8991658050840713
+      },
+      {
+        "n_train": 35,
+        "realised": 20,
+        "retained_energy": 0.8661135407214672
+      },
+      {
+        "n_train": 35,
+        "realised": 20,
+        "retained_energy": 0.8724851154236268
+      },
+      {
+        "n_train": 35,
+        "realised": 20,
+        "retained_energy": 0.9145180685189204
+      },
+      {
+        "n_train": 36,
+        "realised": 20,
+        "retained_energy": 0.9083301853920122
+      }
+    ],
+    "mean": 0.8921225430280195,
+    "min": 0.8661135407214672,
+    "max": 0.9145180685189204
+  },
+  "beam": {
+    "folds": [
+      {
+        "n_train": 20,
+        "realised": 19,
+        "retained_energy": 1.0000000000000002
+      },
+      {
+        "n_train": 20,
+        "realised": 19,
+        "retained_energy": 1.0000000000000004
+      },
+      {
+        "n_train": 20,
+        "realised": 19,
+        "retained_energy": 1.0000000000000004
+      },
+      {
+        "n_train": 20,
+        "realised": 19,
+        "retained_energy": 0.9999999999999998
+      },
+      {
+        "n_train": 20,
+        "realised": 19,
+        "retained_energy": 0.9999999999999999
+      }
+    ],
+    "mean": 1.0000000000000002,
+    "min": 0.9999999999999998,
+    "max": 1.0000000000000004
+  }
+}
