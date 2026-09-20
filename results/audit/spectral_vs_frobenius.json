@@ -1,0 +1,19 @@
+{
+ "note": "fills are in units of rho = pi/2, F is Frobenius and S spectral. A spectral violation must exceed 1 by more than 1e-12, since exact equality lands on 1.0 to within a few ULP. Only the two physical sweeps used in Section 4.1 of the manuscript are kept here.",
+ "physical_sweeps": {
+  "kolmogorov": {
+   "n": 34,
+   "max_frobenius": 2.208169681565096,
+   "max_spectral": 0.9990720400165828,
+   "n_frobenius_violations": 33,
+   "n_spectral_violations": 0
+  },
+  "ks": {
+   "n": 44,
+   "max_frobenius": 2.4576456733902483,
+   "max_spectral": 1.0000000000000007,
+   "n_frobenius_violations": 43,
+   "n_spectral_violations": 0
+  }
+ }
+}

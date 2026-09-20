@@ -1,6 +1,6 @@
 # cXGBoost
 
-Constrained Extreme Gradient Boosting for adapting reduced-order models.
+Constrained Extreme Gradient Boosting for parametric POD subspace prediction.
 
 A proper orthogonal decomposition basis built at one parameter loses accuracy as
 the parameter moves, so the basis has to be predicted at conditions that were
@@ -11,11 +11,20 @@ bound after fitting, or not at all.
 
 cXGBoost imposes it during the fit. Every leaf of a vector-valued boosting
 ensemble solves a quadratically constrained sub-problem which, under the squared
-Euclidean loss, is exactly a Euclidean projection of the ordinary leaf value onto
-an intersection of balls. That is available in closed form when one ball is
-active and by Dykstra's algorithm otherwise, so no general-purpose optimiser is
-called at any candidate split. The fitted ensemble satisfies the bound at every
-training parameter and at every truncation. At a new parameter the predictor
+Euclidean loss, is the Euclidean projection of the ordinary leaf value onto an
+intersection of balls. The projection is computed in closed form when one ball
+is active and by Dykstra's algorithm otherwise, so no general-purpose optimiser
+is called at any candidate split. Dykstra's iteration is stopped after 200
+sweeps or at a relative change of 1e-10, and the iterate is then checked
+against every ball of the leaf. If the check fails, because the iteration has
+not converged within the sweep limit, the iterate is scaled towards zero by the
+largest factor that satisfies every ball. The leaf value is therefore feasible
+in every case, but after that scaling it is no longer the projection. In the
+fits reported in the paper this happened at 25%, 30% and 2.4% of the Dykstra
+calls on Kolmogorov, Kuramoto-Sivashinsky and the beam, candidate splits
+included, and never on the cylinder, which needed no Dykstra call
+(`results/projection_cost_jcp2/cost_fallbacks.json`). The fitted ensemble
+satisfies the bound at every training parameter and at every truncation. At a new parameter the predictor
 checks the bound and, if the raw ensemble output lies outside it, shrinks the
 tangent back onto the ball before decoding (`safeguard=True`, the default). The
 paper reports how often that step acts, which is at two of 25 held-out
