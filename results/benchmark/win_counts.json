@@ -1,0 +1,42 @@
+{
+  "cylinder": {
+    "n": 50,
+    "cxgboost_lower_than": {
+      "Interpolation": 49,
+      "pGP": 37,
+      "unconstrained + projection": 25,
+      "unconstrained boosting": 22,
+      "single constrained tree": 34
+    }
+  },
+  "kolmogorov": {
+    "n": 34,
+    "cxgboost_lower_than": {
+      "Interpolation": 31,
+      "pGP": 15,
+      "unconstrained + projection": 29,
+      "unconstrained boosting": 19,
+      "single constrained tree": 11
+    }
+  },
+  "ks": {
+    "n": 44,
+    "cxgboost_lower_than": {
+      "Interpolation": 43,
+      "pGP": 35,
+      "unconstrained + projection": 21,
+      "unconstrained boosting": 11,
+      "single constrained tree": 16
+    }
+  },
+  "beam": {
+    "n": 25,
+    "cxgboost_lower_than": {
+      "Interpolation": 20,
+      "pGP": 15,
+      "unconstrained + projection": 18,
+      "unconstrained boosting": 18,
+      "single constrained tree": 10
+    }
+  }
+}

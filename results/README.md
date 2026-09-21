@@ -9,9 +9,9 @@ below is on that sweep.
 
 | Folder | Manuscript | Contents |
 |---|---|---|
-| `benchmark/` | Table 2, Figures 2, 5, 7, 9 and 10 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the paired Wilcoxon tests with Holm correction (`paired_tests_holm.json`) |
+| `benchmark/` | Table 2, Figures 2, 5, 7 and 9 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the number of held-out parameters at which cXGBoost has the lower error than each other predictor (`win_counts.json`, also against the boosting versions of Table 5) |
 | `sample_size/` | Table 3 | mean error of the three predictors at every training size, eight draws each (`sample_size.json`) |
-| `ablation_stability/` | Table 4, Table 5 fit times, Figure 11 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s`, which is the Fit time column of Table 5 (`<case>_stability.json`), and the stage-wise norms drawn in Figure 11 (`stage_trajectories.json`) |
+| `ablation_stability/` | Table 4, Table 5 fit times, Figure 10 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s`, which is the Fit time column of Table 5 (`<case>_stability.json`), and the stage-wise norms drawn in Figure 10 (`stage_trajectories.json`) |
 | `ablation_native/` | Table 5 errors | the three versions of the boosting model in Table 5, a single constrained tree, and their paired tests (`compare.json`, `*_errors.csv`) |
 | `sensitivity_jcp2/` | Sections 3 and 4.3 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`) and on Kolmogorov (`pca_kolmogorov.json`) |
 | `projection_cost_jcp2/` | Section 4.4 | a separate refit of the Table 2 cXGBoost fits with counters in the leaf solver (`cost_fallbacks.json`): active solves, closed-form solves, Dykstra calls, sweeps, and the calls at which the scaled iterate replaced the projection. Its `wall_s` is the time of that refit, not the Table 5 fit time |
