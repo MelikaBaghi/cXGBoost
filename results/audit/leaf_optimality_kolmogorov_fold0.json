@@ -1,0 +1,42 @@
+{
+  "case": "kolmogorov",
+  "fold": 0,
+  "every": 40,
+  "active_solves": 17419,
+  "compared": 435,
+  "interior_point_failures": 0,
+  "fold_mean_error": 0.7647386142421538,
+  "closed_form": {
+    "n": 30,
+    "gap_median": -1.3483293520659144e-09,
+    "gap_p90": -3.1058525060468836e-10,
+    "gap_max": -1.3271347402683333e-10,
+    "dist_median": 3.517467922477889e-08,
+    "dist_max": 4.366300940985452e-05,
+    "n_active_median": 2.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 0.9999999999578119
+  },
+  "dykstra_converged": {
+    "n": 270,
+    "gap_median": -1.6752040933620272e-09,
+    "gap_p90": 1.1326458583522793e-10,
+    "gap_max": 1.09714832265162e-08,
+    "dist_median": 1.7528843751106058e-07,
+    "dist_max": 0.00024091869259705353,
+    "n_active_median": 6.0,
+    "worst_norm_code": 1.0000000002671336,
+    "worst_norm_ip": 1.000000003201355
+  },
+  "scaled_iterate": {
+    "n": 135,
+    "gap_median": 1.3329610303607025e-05,
+    "gap_p90": 0.0010470630971220012,
+    "gap_max": 0.010660762227959114,
+    "dist_median": 0.0008454353807518757,
+    "dist_max": 0.7299097186539327,
+    "n_active_median": 13.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 1.0000000010847163
+  }
+}

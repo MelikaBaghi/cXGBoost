@@ -18,6 +18,7 @@ the stored snapshots at that parameter, one row per held-out parameter.
 | `rank_energy/` | Section 3, snapshot energy | share of snapshot energy held by the fixed POD rank at every parameter (`rank_energy.json`) |
 | `tuning/` | Table 1 | the leave-one-out grid search on the cylinder and beam development splits and the settings it selected (`cylinder_grid.json`, `beam_grid.json`, `best.json`) |
 | `audit/coordinate_energy_folds.json` | Section 3, coordinate energy | share of coordinate energy kept by the PCA reduction inside each training fold |
+| `audit/leaf_optimality_kolmogorov_fold0.json` | Section 2.7 | fold 0 of Kolmogorov with every 40th active leaf solve re-solved by an interior-point method (`experiments/audit_leaf_optimality_real.py`): objective gap of the closed form, of converged Dykstra runs and of the scaled iterate against the constrained optimum; `leaf_optimality.json` is the same check on synthetic leaves |
 | `audit/` | Sections 4.1 and 4.3 | the largest principal angle and Euclidean norm of every full-sweep target (`spectral_vs_frobenius.json`) and base-score and leaf-combination facts at held-out parameters (`heldout_gap.json`) |
 
 Fold partitions are `kfold(n, 5, seed=42)` in dataset order, so rows with the

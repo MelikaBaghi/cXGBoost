@@ -1,0 +1,34 @@
+{
+  "note": "gap = (f_code - f_ip)/(f_ip - f_free): the code's objective excess over the interior-point optimum, relative to the loss the constraint itself costs; dist = ||w_code - w_ip||/||w_ip||; worst_norm = largest ||y_prev + w|| over the leaf, in units of R.",
+  "dim": 20,
+  "instances": 400,
+  "active": 398,
+  "closed_form": {
+    "n": 23,
+    "gap_median": -2.2537373273645513e-09,
+    "gap_max": -7.219896756859361e-11,
+    "dist_median": 4.2831731668763e-06,
+    "dist_max": 2.9109804801265827e-05,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 0.9999999999949644
+  },
+  "dykstra_converged": {
+    "n": 354,
+    "gap_median": -5.879585008854512e-10,
+    "gap_max": 6.310377622085152e-05,
+    "dist_median": 1.8852023404107303e-06,
+    "dist_max": 0.0010857683067682213,
+    "worst_norm_code": 1.0000000001944616,
+    "worst_norm_ip": 1.0000000000128422
+  },
+  "scaled_iterate": {
+    "n": 21,
+    "gap_median": 1.6819599759822913e-09,
+    "gap_max": 6.720190319273609e-05,
+    "dist_median": 9.336650448334514e-07,
+    "dist_max": 0.0009683428496581729,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 1.0000000000036604
+  },
+  "interior_point_failures": 0
+}
