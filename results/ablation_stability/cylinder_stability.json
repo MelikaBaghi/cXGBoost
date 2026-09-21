@@ -32,8 +32,8 @@
     "accuracy_reported": false,
     "radius": 1.5707963257948965,
     "timing": {
-      "host": "login-phoenix-gnr-3.pace.gatech.edu",
-      "cpu": "Intel(R) Xeon(R) 6972P",
+      "host": "atl1-1-01-003-9-2.pace.gatech.edu",
+      "cpu": "Intel(R) Xeon(R) Gold 6226 CPU @ 2.70GHz",
       "blas_threads": "1",
       "python": "3.9.21",
       "numpy": "1.26.4",
@@ -42,7 +42,7 @@
   },
   "cXGBoost (raw)": {
     "n_queries": 50,
-    "wall_s": 519.1,
+    "wall_s": 255.2,
     "n_outside": 0,
     "frac_outside_ball": 0.0,
     "max_tangent_norm": 1.5707852542064644,
@@ -65,7 +65,7 @@
   },
   "unconstrained": {
     "n_queries": 50,
-    "wall_s": 11.9,
+    "wall_s": 5.3,
     "n_outside": 10,
     "frac_outside_ball": 0.2,
     "max_tangent_norm": 1.9959699960143957,
@@ -1816,7 +1816,7 @@
   },
   "pGP": {
     "n_queries": 50,
-    "wall_s": 6.1,
+    "wall_s": 2.6,
     "n_outside": 5,
     "frac_outside_ball": 0.1,
     "max_tangent_norm": 2.0695688597375046,
