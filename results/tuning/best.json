@@ -1,7 +1,17 @@
 {
   "cylinder": {
-    "max_depth": 2,
+    "max_depth": 4,
     "learning_rate": 0.1,
+    "n_estimators": 150
+  },
+  "burgers": {
+    "max_depth": 3,
+    "learning_rate": 0.1,
+    "n_estimators": 300
+  },
+  "veering": {
+    "max_depth": 2,
+    "learning_rate": 0.5,
     "n_estimators": 150
   },
   "beam": {

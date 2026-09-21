@@ -1,0 +1,137 @@
+{
+  "regenerated": [
+    {
+      "Re": 10.0,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.2074182697257333e-06,
+      "angle_to_stored_basis_deg": 0.011463487174676212,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 100.0,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 8.537736462515939e-07,
+      "angle_to_stored_basis_deg": 1.7075472925031877e-06,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 1125.0,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.2074182697257333e-06,
+      "angle_to_stored_basis_deg": 13.982096024755787,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 31.111,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.2074182697257333e-06,
+      "angle_to_stored_basis_deg": 0.11636067758436737,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 350.0,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.7075472925031877e-06,
+      "angle_to_stored_basis_deg": 0.0005595442544216329,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 52.222,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 2.4148365394514667e-06,
+      "angle_to_stored_basis_deg": 0.12629896931540194,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 73.333,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.7075472925031877e-06,
+      "angle_to_stored_basis_deg": 0.20623300887661858,
+      "sweep_uses_regenerated_basis": true
+    },
+    {
+      "Re": 94.444,
+      "shape": [
+        180,
+        2000
+      ],
+      "saved_basis_is_pod_deg": 1.2074182697257333e-06,
+      "angle_to_stored_basis_deg": 0.4655743528852905,
+      "sweep_uses_regenerated_basis": true
+    }
+  ],
+  "sweep_points": 50,
+  "sweep_Re": [
+    10.0,
+    31.111,
+    52.222,
+    73.333,
+    94.444,
+    100.0,
+    115.556,
+    136.667,
+    157.778,
+    178.889,
+    200.0,
+    233.333,
+    244.828,
+    266.667,
+    289.655,
+    300.0,
+    333.333,
+    350.0,
+    366.667,
+    400.0,
+    433.333,
+    466.667,
+    500.0,
+    533.333,
+    556.667,
+    566.667,
+    600.0,
+    633.333,
+    666.667,
+    700.0,
+    733.333,
+    766.667,
+    800.0,
+    833.333,
+    866.667,
+    900.0,
+    933.333,
+    966.667,
+    1000.0,
+    1033.333,
+    1066.667,
+    1100.0,
+    1125.0,
+    1133.333,
+    1166.667,
+    1200.0,
+    1233.333,
+    1266.667,
+    1333.333,
+    1500.0
+  ]
+}

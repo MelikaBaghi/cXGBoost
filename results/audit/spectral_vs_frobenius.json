@@ -1,19 +1,69 @@
 {
- "note": "fills are in units of rho = pi/2, F is Frobenius and S spectral. A spectral violation must exceed 1 by more than 1e-12, since exact equality lands on 1.0 to within a few ULP. Only the two physical sweeps used in Section 4.1 of the manuscript are kept here.",
- "physical_sweeps": {
-  "kolmogorov": {
-   "n": 34,
-   "max_frobenius": 2.208169681565096,
-   "max_spectral": 0.9990720400165828,
-   "n_frobenius_violations": 33,
-   "n_spectral_violations": 0
+  "note": "fills are in units of rho = pi/2, F is Frobenius and S spectral. A spectral violation must exceed 1 by more than 1e-12, since exact equality lands on 1.0 to within a few ULP.",
+  "boundary_family": {
+    "fill_0.99": {
+      "train": {
+        "n": 60,
+        "max_frobenius": 0.9900006734507758,
+        "max_spectral": 0.6640645320968674,
+        "n_frobenius_violations": 0,
+        "n_spectral_violations": 0
+      },
+      "test": {
+        "n": 24,
+        "max_frobenius": 0.9669179870648373,
+        "max_spectral": 0.6472904143806127,
+        "n_frobenius_violations": 0,
+        "n_spectral_violations": 0
+      }
+    },
+    "fill_1.05": {
+      "train": {
+        "n": 60,
+        "max_frobenius": 1.0500005776425927,
+        "max_spectral": 0.703971494959078,
+        "n_frobenius_violations": 29,
+        "n_spectral_violations": 0
+      },
+      "test": {
+        "n": 24,
+        "max_frobenius": 1.0271390737908614,
+        "max_spectral": 0.6873655377044309,
+        "n_frobenius_violations": 11,
+        "n_spectral_violations": 0
+      }
+    },
+    "fill_1.15": {
+      "train": {
+        "n": 60,
+        "max_frobenius": 1.1499995437297068,
+        "max_spectral": 0.7704607561320859,
+        "n_frobenius_violations": 29,
+        "n_spectral_violations": 0
+      },
+      "test": {
+        "n": 24,
+        "max_frobenius": 1.127462903388265,
+        "max_spectral": 0.7541033817317837,
+        "n_frobenius_violations": 12,
+        "n_spectral_violations": 0
+      }
+    }
   },
-  "ks": {
-   "n": 44,
-   "max_frobenius": 2.4576456733902483,
-   "max_spectral": 1.0000000000000007,
-   "n_frobenius_violations": 43,
-   "n_spectral_violations": 0
+  "physical_sweeps": {
+    "kolmogorov": {
+      "n": 34,
+      "max_frobenius": 2.208169681565096,
+      "max_spectral": 0.9990720400165828,
+      "n_frobenius_violations": 33,
+      "n_spectral_violations": 0
+    },
+    "ks": {
+      "n": 44,
+      "max_frobenius": 2.4576456733902483,
+      "max_spectral": 1.0000000000000007,
+      "n_frobenius_violations": 43,
+      "n_spectral_violations": 0
+    }
   }
- }
 }

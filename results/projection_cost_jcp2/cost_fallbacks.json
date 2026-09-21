@@ -5,7 +5,7 @@
       "seed": 42,
       "mapping": "exact",
       "hyperparameters": {
-        "max_depth": 2,
+        "max_depth": 4,
         "learning_rate": 0.1,
         "n_estimators": 150
       }
@@ -13,19 +13,19 @@
     "coordinate_dim": [
       895
     ],
-    "mean_error": 0.06720304860937358,
-    "wall_s": 3.9,
-    "n_leaves": 4984,
-    "n_active_leaves": 78,
-    "n_active_solves": 1007,
-    "n_closed_form": 1007,
-    "n_dykstra": 0,
-    "dykstra_sweeps": 0,
-    "dykstra_balls": 0,
-    "n_solver_fallbacks": 0,
-    "closed_form_share": 1.0,
-    "sweeps_per_dykstra": null,
-    "balls_per_dykstra": null
+    "mean_error": 0.06251911303800087,
+    "wall_s": 254.8,
+    "n_leaves": 11534,
+    "n_active_leaves": 4481,
+    "n_active_solves": 50027,
+    "n_closed_form": 22470,
+    "n_dykstra": 27557,
+    "dykstra_sweeps": 4281585,
+    "dykstra_balls": 161296,
+    "n_solver_fallbacks": 10727,
+    "closed_form_share": 0.44915745497431386,
+    "sweeps_per_dykstra": 155.3719563087419,
+    "balls_per_dykstra": 5.8531770512029615
   },
   "kolmogorov": {
     "protocol": {
