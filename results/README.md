@@ -20,6 +20,7 @@ below is on that sweep.
 | `tuning/` | Table 1 | the leave-one-out grid search on the cylinder and beam development splits and the settings it selected (`cylinder_grid.json`, `beam_grid.json`, `best.json`) |
 | `audit/cylinder_regen.json` | Section 3.2.1 | the eight Reynolds numbers added to the cylinder sweep, the check that each stored basis is the POD of its regenerated snapshot record, and the count of sweep points, 50, with the 8 that use a regenerated record |
 | `audit/coordinate_energy_folds.json` | Section 3, coordinate energy | share of coordinate energy kept by the PCA reduction inside each training fold |
+| `audit/snapshot_sizes.json` | Sections 3.2 to 3.5, data and split | parameter range, number of parameters, basis size, snapshots per parameter, and the training and test sizes of each fold (`experiments/audit_snapshot_sizes.py`) |
 | `audit/leaf_optimality_kolmogorov_fold0.json` | Section 4.4 | fold 0 of Kolmogorov with every 40th active leaf solve re-solved by an interior-point method (`experiments/audit_leaf_optimality_real.py`): objective gap of the closed form, of converged Dykstra runs and of the scaled iterate against the constrained optimum; `leaf_optimality.json` is the same check on synthetic leaves |
 | `audit/` | Sections 4.1 and 4.3 | the largest principal angle and Euclidean norm of every full-sweep target (`spectral_vs_frobenius.json`) and base-score and leaf-combination facts at held-out parameters (`heldout_gap.json`) |
 
