@@ -20,10 +20,9 @@ against every ball of the leaf. If the check fails, because the iteration has
 not converged within the sweep limit, the iterate is scaled towards zero by the
 largest factor that satisfies every ball. The leaf value is therefore feasible
 in every case, but after that scaling it is no longer the projection. In the
-fits reported in the paper this happened at 25%, 30% and 2.4% of the Dykstra
-calls on Kolmogorov, Kuramoto-Sivashinsky and the beam, candidate splits
-included, and never on the cylinder, which needed no Dykstra call
-(`results/projection_cost_jcp2/cost_fallbacks.json`). The fitted ensemble
+fits reported in the paper this happened at 56%, 25%, 30% and 2.4% of the
+Dykstra calls on the cylinder, Kolmogorov, Kuramoto-Sivashinsky and the beam,
+candidate splits included (`results/projection_cost_jcp2/cost_fallbacks.json`). The fitted ensemble
 satisfies the bound at every training parameter and at every truncation. At a new parameter the predictor
 checks the bound and, if the raw ensemble output lies outside it, shrinks the
 tangent back onto the ball before decoding (`safeguard=True`, the default). The

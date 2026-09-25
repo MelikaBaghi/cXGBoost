@@ -1,7 +1,7 @@
 {
   "cylinder": {
-    "worst_training_frobenius_over_bound": 0.999997877602277,
-    "heldout_total": 50,
+    "worst_training_frobenius_over_bound": 0.9999999497973161,
+    "heldout_total": 46,
     "heldout_with_novel_leaf_path": 0
   },
   "kolmogorov": {

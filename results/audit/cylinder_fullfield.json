@@ -1,0 +1,450 @@
+{
+  "n": 46,
+  "diverged": [
+    {
+      "Re": 1233.333,
+      "first_nonfinite_snapshot": 1873,
+      "first_nonfinite_step": 18730
+    },
+    {
+      "Re": 1266.667,
+      "first_nonfinite_snapshot": 710,
+      "first_nonfinite_step": 7100
+    },
+    {
+      "Re": 1333.333,
+      "first_nonfinite_snapshot": 694,
+      "first_nonfinite_step": 6940
+    },
+    {
+      "Re": 1500.0,
+      "first_nonfinite_snapshot": 341,
+      "first_nonfinite_step": 3410
+    }
+  ],
+  "regenerated_identical": "8 of 8",
+  "original_rel_diff_median": 0.03715945575698952,
+  "original_rel_diff_max": 0.33020313838193677,
+  "original_angle_median_deg": 6.5808503722936305,
+  "original_angle_max_deg": 84.87096729654968,
+  "rank5_energy_full_min": 0.9872176972106667,
+  "rank5_energy_full_median": 0.9960269546010774,
+  "rank5_energy_slice_min": 0.993439187581078,
+  "rank5_energy_slice_median": 0.9967377664294741,
+  "rows": [
+    {
+      "Re": 10.0,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 2.2588727439225506e-06,
+      "rank5_energy_full": 0.9997508959923092,
+      "rank5_energy_slice": 0.9999997785358717
+    },
+    {
+      "Re": 31.111,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 2.2588727439225506e-06,
+      "rank5_energy_full": 0.9996767331082252,
+      "rank5_energy_slice": 0.9999935362974789
+    },
+    {
+      "Re": 52.222,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 2.2588727439225506e-06,
+      "rank5_energy_full": 0.9995766671155719,
+      "rank5_energy_slice": 0.9999843609500497
+    },
+    {
+      "Re": 73.333,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 1.2074182697257333e-06,
+      "rank5_energy_full": 0.9995017822755933,
+      "rank5_energy_slice": 0.9999632435153408
+    },
+    {
+      "Re": 94.444,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 8.537736462515939e-07,
+      "rank5_energy_full": 0.9994322158333379,
+      "rank5_energy_slice": 0.9999305707412187
+    },
+    {
+      "Re": 100.0,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 2.4148365394514667e-06,
+      "rank5_energy_full": 0.9994067545588459,
+      "rank5_energy_slice": 0.9999167643557996
+    },
+    {
+      "Re": 115.556,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.0015544106043791119,
+      "slice_basis_angle_deg": 7.183617877327434,
+      "rank5_energy_full": 0.9993145130973985,
+      "rank5_energy_slice": 0.9998501023183064
+    },
+    {
+      "Re": 136.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.0018931426447573302,
+      "slice_basis_angle_deg": 0.9355760349269403,
+      "rank5_energy_full": 0.9991615890572755,
+      "rank5_energy_slice": 0.9997761874537876
+    },
+    {
+      "Re": 157.778,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.002354400834895132,
+      "slice_basis_angle_deg": 0.8323042730012283,
+      "rank5_energy_full": 0.9989923852625979,
+      "rank5_energy_slice": 0.9996780983899926
+    },
+    {
+      "Re": 178.889,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.00300453810817951,
+      "slice_basis_angle_deg": 0.9158263419422445,
+      "rank5_energy_full": 0.9987995944374303,
+      "rank5_energy_slice": 0.9995423166627595
+    },
+    {
+      "Re": 200.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.00373359310460149,
+      "slice_basis_angle_deg": 0.0007998720012037224,
+      "rank5_energy_full": 0.9986109895372057,
+      "rank5_energy_slice": 0.9993350542656102
+    },
+    {
+      "Re": 233.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.005170271465924276,
+      "slice_basis_angle_deg": 1.954969079217572,
+      "rank5_energy_full": 0.998342858337604,
+      "rank5_energy_slice": 0.9988433087646906
+    },
+    {
+      "Re": 244.828,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.005956919601979895,
+      "slice_basis_angle_deg": 2.55201313968389,
+      "rank5_energy_full": 0.9982562427333693,
+      "rank5_energy_slice": 0.9986838795340416
+    },
+    {
+      "Re": 266.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.008458571264698003,
+      "slice_basis_angle_deg": 4.464234466940843,
+      "rank5_energy_full": 0.9980906976863881,
+      "rank5_energy_slice": 0.9984145275961775
+    },
+    {
+      "Re": 289.655,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.01154012329016533,
+      "slice_basis_angle_deg": 14.237176684898785,
+      "rank5_energy_full": 0.997890456993385,
+      "rank5_energy_slice": 0.9982057143408516
+    },
+    {
+      "Re": 300.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.01212123862254032,
+      "slice_basis_angle_deg": 0.00233807312091984,
+      "rank5_energy_full": 0.9977857196450078,
+      "rank5_energy_slice": 0.9982287730193002
+    },
+    {
+      "Re": 333.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.014002879914356139,
+      "slice_basis_angle_deg": 4.450509996053229,
+      "rank5_energy_full": 0.9973743871303903,
+      "rank5_energy_slice": 0.9978743788905327
+    },
+    {
+      "Re": 350.0,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 1.9090959104164224e-06,
+      "rank5_energy_full": 0.9971234436684292,
+      "rank5_energy_slice": 0.9974387197228212
+    },
+    {
+      "Re": 366.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.01877001847668771,
+      "slice_basis_angle_deg": 9.997337696106547,
+      "rank5_energy_full": 0.9968496685187871,
+      "rank5_energy_slice": 0.9968769155329841
+    },
+    {
+      "Re": 400.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.023665559884173255,
+      "slice_basis_angle_deg": 0.0020167837747625634,
+      "rank5_energy_full": 0.9963232225507933,
+      "rank5_energy_slice": 0.99639263576611
+    },
+    {
+      "Re": 433.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.03794628086550527,
+      "slice_basis_angle_deg": 8.582781944590382,
+      "rank5_energy_full": 0.9957833038991021,
+      "rank5_energy_slice": 0.9966953139178486
+    },
+    {
+      "Re": 466.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.025135515786066053,
+      "slice_basis_angle_deg": 5.978082867259826,
+      "rank5_energy_full": 0.9952772824790176,
+      "rank5_energy_slice": 0.9968149144288853
+    },
+    {
+      "Re": 500.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.021298473960739764,
+      "slice_basis_angle_deg": 0.0016322093463794238,
+      "rank5_energy_full": 0.9948869858928117,
+      "rank5_energy_slice": 0.9963921630425283
+    },
+    {
+      "Re": 533.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.024531139231991704,
+      "slice_basis_angle_deg": 12.903938464108645,
+      "rank5_energy_full": 0.9946197853352374,
+      "rank5_energy_slice": 0.9956369570871725
+    },
+    {
+      "Re": 556.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.02803968632270223,
+      "slice_basis_angle_deg": 27.67159749610882,
+      "rank5_energy_full": 0.9944487977192029,
+      "rank5_energy_slice": 0.9952892883136327
+    },
+    {
+      "Re": 566.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.02978373273516477,
+      "slice_basis_angle_deg": 23.398854514729774,
+      "rank5_energy_full": 0.9943738126074442,
+      "rank5_energy_slice": 0.9952677033288899
+    },
+    {
+      "Re": 600.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.03704147865695835,
+      "slice_basis_angle_deg": 0.0014870300866134858,
+      "rank5_energy_full": 0.9940812166965943,
+      "rank5_energy_slice": 0.9954110777299534
+    },
+    {
+      "Re": 633.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.046762986369538885,
+      "slice_basis_angle_deg": 7.986221791154386,
+      "rank5_energy_full": 0.9936245215079572,
+      "rank5_energy_slice": 0.9953217553156725
+    },
+    {
+      "Re": 666.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.06495281533093229,
+      "slice_basis_angle_deg": 11.210027955014215,
+      "rank5_energy_full": 0.9930856655088881,
+      "rank5_energy_slice": 0.9951948856515195
+    },
+    {
+      "Re": 700.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.10550157556515706,
+      "slice_basis_angle_deg": 0.0015068178495988164,
+      "rank5_energy_full": 0.9927020555731039,
+      "rank5_energy_slice": 0.9959924332932072
+    },
+    {
+      "Re": 733.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.09151830895531499,
+      "slice_basis_angle_deg": 15.949986441485084,
+      "rank5_energy_full": 0.9920079259983718,
+      "rank5_energy_slice": 0.9955833927073799
+    },
+    {
+      "Re": 766.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.07202677474152468,
+      "slice_basis_angle_deg": 9.497496086263872,
+      "rank5_energy_full": 0.9915808635872025,
+      "rank5_energy_slice": 0.9954390331177617
+    },
+    {
+      "Re": 800.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.05402567498291005,
+      "slice_basis_angle_deg": 0.00842489939746472,
+      "rank5_energy_full": 0.9913660911713056,
+      "rank5_energy_slice": 0.9953888795789265
+    },
+    {
+      "Re": 833.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.0372774328570207,
+      "slice_basis_angle_deg": 3.506975785430434,
+      "rank5_energy_full": 0.9914351679128794,
+      "rank5_energy_slice": 0.995091869098329
+    },
+    {
+      "Re": 866.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.20953450782379276,
+      "slice_basis_angle_deg": 26.319708574468418,
+      "rank5_energy_full": 0.9929440508769942,
+      "rank5_energy_slice": 0.9959164620482822
+    },
+    {
+      "Re": 900.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.27734271872350313,
+      "slice_basis_angle_deg": 0.06987446917539016,
+      "rank5_energy_full": 0.9947541765159269,
+      "rank5_energy_slice": 0.9957723576759329
+    },
+    {
+      "Re": 933.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.16833186847294151,
+      "slice_basis_angle_deg": 31.78075724122858,
+      "rank5_energy_full": 0.9929637857194002,
+      "rank5_energy_slice": 0.9963195959463051
+    },
+    {
+      "Re": 966.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.20719092174363782,
+      "slice_basis_angle_deg": 28.192822689980513,
+      "rank5_energy_full": 0.992746393070186,
+      "rank5_energy_slice": 0.9960897956188003
+    },
+    {
+      "Re": 1000.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.08397160497209387,
+      "slice_basis_angle_deg": 0.38107506895703186,
+      "rank5_energy_full": 0.9931661694389378,
+      "rank5_energy_slice": 0.9963343644328884
+    },
+    {
+      "Re": 1033.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.256733152736628,
+      "slice_basis_angle_deg": 31.079348645212157,
+      "rank5_energy_full": 0.9955926756576949,
+      "rank5_energy_slice": 0.9967802189410995
+    },
+    {
+      "Re": 1066.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.29348990693395416,
+      "slice_basis_angle_deg": 9.722858026911766,
+      "rank5_energy_full": 0.9962206609262811,
+      "rank5_energy_slice": 0.9971267022966696
+    },
+    {
+      "Re": 1100.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.27895589334209614,
+      "slice_basis_angle_deg": 0.699061957358642,
+      "rank5_energy_full": 0.9962395713800876,
+      "rank5_energy_slice": 0.9964537477331785
+    },
+    {
+      "Re": 1125.0,
+      "manuscript_record": "regenerated",
+      "slice_identical": true,
+      "slice_rel_diff": 0.0,
+      "slice_basis_angle_deg": 1.2074182697257333e-06,
+      "rank5_energy_full": 0.9984579586808203,
+      "rank5_energy_slice": 0.9982627075086733
+    },
+    {
+      "Re": 1133.333,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.28575913979501966,
+      "slice_basis_angle_deg": 69.72220214345778,
+      "rank5_energy_full": 0.9935639561186388,
+      "rank5_energy_slice": 0.9951227908054618
+    },
+    {
+      "Re": 1166.667,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.13287896847676373,
+      "slice_basis_angle_deg": 20.02051388902736,
+      "rank5_energy_full": 0.9958332482758735,
+      "rank5_energy_slice": 0.9946774812562345
+    },
+    {
+      "Re": 1200.0,
+      "manuscript_record": "original",
+      "slice_identical": false,
+      "slice_rel_diff": 0.33020313838193677,
+      "slice_basis_angle_deg": 84.87096729654968,
+      "rank5_energy_full": 0.9872176972106667,
+      "rank5_energy_slice": 0.993439187581078
+    }
+  ]
+}

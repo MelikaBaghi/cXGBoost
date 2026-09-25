@@ -1,13 +1,13 @@
 {
   "cylinder": {
-    "n_parameters": 50,
-    "n": 180,
+    "n_parameters": 46,
+    "n": 93600,
     "r": 5,
     "mu_min": [
       10.0
     ],
     "mu_max": [
-      1500.0
+      1200.0
     ],
     "mu_values": [
       [
@@ -56,40 +56,36 @@
         1125.0,
         1133.333,
         1166.667,
-        1200.0,
-        1233.333,
-        1266.667,
-        1333.333,
-        1500.0
+        1200.0
       ]
     ],
     "snapshots_min": 2000,
     "snapshots_max": 2000,
     "folds": [
       {
-        "n_train": 40,
+        "n_train": 36,
         "n_test": 10
       },
       {
-        "n_train": 40,
-        "n_test": 10
+        "n_train": 37,
+        "n_test": 9
       },
       {
-        "n_train": 40,
-        "n_test": 10
+        "n_train": 37,
+        "n_test": 9
       },
       {
-        "n_train": 40,
-        "n_test": 10
+        "n_train": 37,
+        "n_test": 9
       },
       {
-        "n_train": 40,
-        "n_test": 10
+        "n_train": 37,
+        "n_test": 9
       }
     ],
     "fixed_split": {
-      "n_train": 25,
-      "n_test": 25
+      "n_train": 23,
+      "n_test": 23
     }
   },
   "kolmogorov": {

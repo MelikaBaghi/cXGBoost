@@ -1,12 +1,12 @@
 {
   "cylinder": {
-    "n": 50,
+    "n": 46,
     "cxgboost_lower_than": {
-      "Interpolation": 49,
-      "pGP": 37,
-      "unconstrained + projection": 25,
-      "unconstrained boosting": 22,
-      "single constrained tree": 34
+      "Interpolation": 37,
+      "pGP": 35,
+      "unconstrained + projection": 22,
+      "unconstrained boosting": 12,
+      "single constrained tree": 31
     }
   },
   "kolmogorov": {

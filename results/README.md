@@ -4,24 +4,27 @@ Every table and figure of "Constrained Extreme Gradient Boosting for Parametric
 POD Subspace Prediction" (Baghi, Liu and Paynabar) is generated from the files in
 this folder. Errors are relative reconstruction errors of a predicted basis on
 the stored snapshots at that parameter, one row per held-out parameter. The
-cylinder sweep is the 50-point sweep of Section 3.2.1, and every cylinder file
-below is on that sweep.
+cylinder is the whole-field sweep of Section 3.2, the velocity magnitude on the
+whole 520 x 180 lattice at 46 Reynolds numbers, and every cylinder file below
+is on that sweep.
 
 | Folder | Manuscript | Contents |
 |---|---|---|
-| `benchmark/` | Table 3, Figures 2, 5, 6, 8 and 10 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the number of held-out parameters at which cXGBoost has the lower error than each other predictor (`win_counts.json`, also against the boosting versions of Table 6) |
+| `benchmark/` | Table 3, Figures 2, 5, 6, 8 and 10 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the number of held-out parameters at which cXGBoost has the lower error than each other predictor (`win_counts.json`) |
 | `sample_size/` | Table 4 | mean error of the three predictors at every training size, eight draws each (`sample_size.json`) |
-| `ablation_stability/` | Table 5, Table 6 fit times, Figure 11 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s`, which is the Fit time column of Table 6, measured single-threaded on one core of an Intel Xeon Gold 6226 compute node (`<case>_stability.json`), and the stage-wise norms drawn in Figure 10 (`stage_trajectories.json`) |
-| `ablation_native/` | Table 6 errors | the three versions of the boosting model in Table 6, a single constrained tree, and their paired tests (`compare.json`, `*_errors.csv`) |
-| `sensitivity_jcp2/` | Sections 3 and 4.3 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`) and on Kolmogorov (`pca_kolmogorov.json`) |
-| `projection_cost_jcp2/` | Section 4.4 | a separate refit of the Table 3 cXGBoost fits with counters in the leaf solver (`cost_fallbacks.json`): active solves, closed-form solves, Dykstra calls, sweeps, and the calls at which the scaled iterate replaced the projection. Its `wall_s` is the time of that refit, not the Table 6 fit time |
+| `ablation_stability/` | Table 5, Figure 11 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s` (`<case>_stability.json`), and the stage-wise norms drawn in Figure 11 (`stage_trajectories.json`) |
+| `ablation_native/` | claim check | three versions of the boosting model, a single constrained tree, and their paired tests (`compare.json`, `*_errors.csv`), whose cXGBoost means match Table 3 |
+| `sensitivity_jcp2/` | Sections 3 and 4.3 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`), Kolmogorov (`pca_kolmogorov.json`) and the cylinder (`pca_cylinder.json`) |
+| `projection_cost_jcp2/` | Section 4.1 | a separate refit of the Table 3 cXGBoost fits with counters in the leaf solver (`cost_fallbacks.json`): active solves, closed-form solves, Dykstra calls, sweeps, and the calls at which the scaled iterate replaced the projection. Its `wall_s` is the time of that refit |
 | `benchmark_r12/` | Section 3, rank check | Kolmogorov refitted at rank 12 (`kolmogorov_errors.csv`, `kolmogorov_summary.json`) |
 | `rank_energy/` | Section 3, snapshot energy | share of snapshot energy held by the fixed POD rank at every parameter (`rank_energy.json`) |
 | `tuning/` | Table 2 | the leave-one-out grid search on the cylinder and beam development splits and the settings it selected (`cylinder_grid.json`, `beam_grid.json`, `best.json`) |
-| `audit/cylinder_regen.json` | Section 3.2.1 | the eight Reynolds numbers added to the cylinder sweep, the check that each stored basis is the POD of its regenerated snapshot record, and the count of sweep points, 50, with the 8 that use a regenerated record |
+| `audit/cylinder_fullfield.json` | Section 3.2 | the whole-field records: the four Reynolds numbers at which the solver did not stay finite, with the first snapshot that is not, the comparison of the x = 200 column of each rerun with the earlier slice record, and the share of snapshot energy that rank 5 keeps |
+| `audit/cylinder_regen.json` | not in the paper | the eight records regenerated for the earlier single-slice sweep |
+| `field_panels/` | Figure 3 | the fixed-split errors of the three predictors at every test Reynolds number of the cylinder, the error of the POD basis of each held-out record, and the same at the instant drawn (`cylinder_test_split.json`) |
 | `audit/coordinate_energy_folds.json` | Section 3, coordinate energy | share of coordinate energy kept by the PCA reduction inside each training fold |
 | `audit/snapshot_sizes.json` | Table 1, Sections 3.2 to 3.5 | parameter range, number of parameters, basis size, snapshots per parameter, and the training and test sizes of each fold (`experiments/audit_snapshot_sizes.py`) |
-| `audit/leaf_optimality_kolmogorov_fold0.json` | Section 4.4 | fold 0 of Kolmogorov with every 40th active leaf solve re-solved by an interior-point method (`experiments/audit_leaf_optimality_real.py`): objective gap of the closed form, of converged Dykstra runs and of the scaled iterate against the constrained optimum; `leaf_optimality.json` is the same check on synthetic leaves |
+| `audit/leaf_optimality_kolmogorov_fold0.json` | Section 4.1 | fold 0 of Kolmogorov with every 40th active leaf solve re-solved by an interior-point method (`experiments/audit_leaf_optimality_real.py`): objective gap of the closed form, of converged Dykstra runs and of the scaled iterate against the constrained optimum; `leaf_optimality.json` is the same check on synthetic leaves |
 | `audit/` | Sections 4.1 and 4.3 | the largest principal angle and Euclidean norm of every full-sweep target (`spectral_vs_frobenius.json`) and base-score and leaf-combination facts at held-out parameters (`heldout_gap.json`) |
 
 Fold partitions are `kfold(n, 5, seed=42)` in dataset order, so rows with the

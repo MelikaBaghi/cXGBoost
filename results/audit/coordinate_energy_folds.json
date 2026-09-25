@@ -1,4 +1,36 @@
 {
+  "cylinder": {
+    "folds": [
+      {
+        "n_train": 36,
+        "realised": 20,
+        "retained_energy": 0.9877717063473743
+      },
+      {
+        "n_train": 37,
+        "realised": 20,
+        "retained_energy": 0.9870563116643924
+      },
+      {
+        "n_train": 37,
+        "realised": 20,
+        "retained_energy": 0.9907818666646854
+      },
+      {
+        "n_train": 37,
+        "realised": 20,
+        "retained_energy": 0.9901796488036505
+      },
+      {
+        "n_train": 37,
+        "realised": 20,
+        "retained_energy": 0.9887772764324592
+      }
+    ],
+    "mean": 0.9889133619825123,
+    "min": 0.9870563116643924,
+    "max": 0.9907818666646854
+  },
   "kolmogorov": {
     "folds": [
       {

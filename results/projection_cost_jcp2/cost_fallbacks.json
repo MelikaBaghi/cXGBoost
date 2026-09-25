@@ -3,29 +3,29 @@
     "protocol": {
       "folds": 5,
       "seed": 42,
-      "mapping": "exact",
+      "mapping": "pca",
       "hyperparameters": {
         "max_depth": 4,
         "learning_rate": 0.1,
-        "n_estimators": 150
+        "n_estimators": 300
       }
     },
     "coordinate_dim": [
-      895
+      20
     ],
-    "mean_error": 0.06251911303800087,
-    "wall_s": 254.8,
-    "n_leaves": 11534,
-    "n_active_leaves": 4481,
-    "n_active_solves": 50027,
-    "n_closed_form": 22470,
-    "n_dykstra": 27557,
-    "dykstra_sweeps": 4281585,
-    "dykstra_balls": 161296,
-    "n_solver_fallbacks": 10727,
-    "closed_form_share": 0.44915745497431386,
-    "sweeps_per_dykstra": 155.3719563087419,
-    "balls_per_dykstra": 5.8531770512029615
+    "mean_error": 0.0850292678201076,
+    "wall_s": 2110.3,
+    "n_leaves": 19206,
+    "n_active_leaves": 16473,
+    "n_active_solves": 212406,
+    "n_closed_form": 26373,
+    "n_dykstra": 186033,
+    "dykstra_sweeps": 29305880,
+    "dykstra_balls": 1961375,
+    "n_solver_fallbacks": 104286,
+    "closed_form_share": 0.12416315923279003,
+    "sweeps_per_dykstra": 157.53054565587826,
+    "balls_per_dykstra": 10.543156321727865
   },
   "kolmogorov": {
     "protocol": {

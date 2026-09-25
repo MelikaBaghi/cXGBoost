@@ -2,65 +2,65 @@
   "cylinder": {
     "arms": {
       "cXGBoost": {
-        "mean": 0.06251911303800087,
-        "median": 0.06424508143471422,
-        "max": 0.1451436677106331,
-        "leaf_active_fraction": 0.3877982011397959,
+        "mean": 0.0850292678201076,
+        "median": 0.07618648605381681,
+        "max": 0.18541217846421845,
+        "leaf_active_fraction": 0.8575929873802153,
         "frac_outside_ball": 0.0
       },
       "unconstrained + projection": {
-        "mean": 0.062266301321503646,
-        "median": 0.06388902976673964,
-        "max": 0.14559703931658968,
+        "mean": 0.08495968671594409,
+        "median": 0.0764505015216479,
+        "max": 0.18544243065232877,
         "leaf_active_fraction": 0.0,
-        "frac_outside_ball": 0.2
+        "frac_outside_ball": 0.7866666666666666
       },
       "unconstrained boosting": {
-        "mean": 0.06050093503832528,
-        "median": 0.06388902976673964,
-        "max": 0.14559703931658968,
+        "mean": 0.07831717308571473,
+        "median": 0.0764505015216479,
+        "max": 0.18544243065232877,
         "leaf_active_fraction": 0.0,
-        "frac_outside_ball": 0.2
+        "frac_outside_ball": 0.7866666666666666
       },
       "single constrained tree": {
-        "mean": 0.06470626960185773,
-        "median": 0.06823336884170556,
-        "max": 0.14429543930446015,
-        "leaf_active_fraction": 0.14436438923395442,
+        "mean": 0.08939253776331861,
+        "median": 0.08390935848029439,
+        "max": 0.18556831332947177,
+        "leaf_active_fraction": 0.5104962406015038,
         "frac_outside_ball": 0.0
       }
     },
     "cxgboost_matches_table2": true,
-    "posthoc_refit_mean": 0.062266301321503646,
+    "posthoc_refit_mean": 0.08495968671594409,
     "posthoc_refit_matches_json": true,
     "paired": {
       "unconstrained + projection": {
-        "n": 50,
-        "other_mean": 0.062266301321503646,
-        "margin_of_cxgboost": -0.0040601691626400305,
-        "p_value": 0.9389922173111831,
-        "effect_size": -0.013333333333333334
+        "n": 46,
+        "other_mean": 0.08495968671594409,
+        "margin_of_cxgboost": -0.0008189896508934775,
+        "p_value": 0.5956819514196638,
+        "effect_size": 0.09158186864014801
       },
       "unconstrained boosting": {
-        "n": 50,
-        "other_mean": 0.06050093503832528,
-        "margin_of_cxgboost": -0.03335779849348017,
-        "p_value": 0.16001685587048975,
-        "effect_size": 0.22980392156862745
+        "n": 46,
+        "other_mean": 0.07831717308571473,
+        "margin_of_cxgboost": -0.08570399658127054,
+        "p_value": 1.3962768605324527e-05,
+        "effect_size": 0.696577243293247
       },
       "single constrained tree": {
-        "n": 50,
-        "other_mean": 0.06470626960185773,
-        "margin_of_cxgboost": 0.03380130823975156,
-        "p_value": 0.001909205638362721,
-        "effect_size": -0.4949019607843137
+        "n": 46,
+        "other_mean": 0.08939253776331861,
+        "margin_of_cxgboost": 0.04881022568979398,
+        "p_value": 0.0013624865210886128,
+        "effect_size": -0.5300647548566142
       }
     },
     "paired_cxgboost_vs_posthoc": {
-      "p_value": 0.9389922173111831,
-      "effect_size": -0.013333333333333334
+      "p_value": 0.5956819514196638,
+      "effect_size": 0.09158186864014801
     },
-    "margin_over_posthoc": -0.0040601691626400305
+    "margin_over_posthoc": -0.0008189896508934775
   },
   "beam": {
     "arms": {

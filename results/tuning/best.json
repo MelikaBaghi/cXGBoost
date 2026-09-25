@@ -2,7 +2,7 @@
   "cylinder": {
     "max_depth": 4,
     "learning_rate": 0.1,
-    "n_estimators": 150
+    "n_estimators": 300
   },
   "burgers": {
     "max_depth": 3,
