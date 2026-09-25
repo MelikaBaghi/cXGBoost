@@ -10,9 +10,9 @@ is on that sweep.
 
 | Folder | Manuscript | Contents |
 |---|---|---|
-| `benchmark/` | Table 3, Figures 2, 5, 6, 8 and 10 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the number of held-out parameters at which cXGBoost has the lower error than each other predictor (`win_counts.json`) |
+| `benchmark/` | Table 3, Figures 2, 5, 6, 8, 9 and 11 | five-fold cross-validated errors of cXGBoost, Grassmann interpolation and the projected Gaussian process (`*_errors.csv`, `*_pgp_errors.csv`), per-example summaries, and the number of held-out parameters at which cXGBoost has the lower error than each other predictor (`win_counts.json`) |
 | `sample_size/` | Table 4 | mean error of the three predictors at every training size, eight draws each (`sample_size.json`) |
-| `ablation_stability/` | Table 5, Figure 11 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s` (`<case>_stability.json`), and the stage-wise norms drawn in Figure 11 (`stage_trajectories.json`) |
+| `ablation_stability/` | Table 5, Figure 12 | raw-coordinate diagnostics of the constrained and unconstrained models and the wall-clock time of each five-fold fit, `wall_s` (`<case>_stability.json`), and the stage-wise norms drawn in Figure 12 (`stage_trajectories.json`) |
 | `ablation_native/` | claim check | three versions of the boosting model, a single constrained tree, and their paired tests (`compare.json`, `*_errors.csv`), whose cXGBoost means match Table 3 |
 | `sensitivity_jcp2/` | Sections 3 and 4.3 | refits with the geodesic-centroid reference (`reference.json`) and with a lossless PCA cap on Kuramoto-Sivashinsky (`pca.json`), Kolmogorov (`pca_kolmogorov.json`) and the cylinder (`pca_cylinder.json`) |
 | `projection_cost_jcp2/` | Section 4.1 | a separate refit of the Table 3 cXGBoost fits with counters in the leaf solver (`cost_fallbacks.json`): active solves, closed-form solves, Dykstra calls, sweeps, and the calls at which the scaled iterate replaced the projection. Its `wall_s` is the time of that refit |
