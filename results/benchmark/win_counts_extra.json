@@ -1,0 +1,9 @@
+{
+  "rotating_cylinder": {
+    "n": 36,
+    "cxgboost_lower_than": {
+      "Interpolation": 26,
+      "pGP": 20
+    }
+  }
+}

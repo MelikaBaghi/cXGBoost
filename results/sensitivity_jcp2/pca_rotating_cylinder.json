@@ -1,0 +1,57 @@
+{
+  "rotating_cylinder": {
+    "case": "rotating_cylinder",
+    "reference": "middle",
+    "mapping_dim": 40,
+    "protocol": {
+      "folds": 5,
+      "seed": 42,
+      "mapping": "pca",
+      "hyperparameters": {
+        "n_estimators": 150,
+        "learning_rate": 0.1,
+        "max_depth": 2
+      }
+    },
+    "cXGBoost": {
+      "accuracy": {
+        "n": 36,
+        "mean": 0.06544096244770958,
+        "std": 0.034728293815146145,
+        "median": 0.0565359731549415,
+        "p90": 0.12249848176010827,
+        "p95": 0.13394788113036019,
+        "max": 0.15423224404215793,
+        "min": 0.02144426066150633
+      },
+      "validity": {
+        "n_queries": 36,
+        "n_outside": 3,
+        "max_ratio": 1.1847469629992793,
+        "n_outside_spectral": 0,
+        "leaf_active_fraction": 0.8456701347989654
+      },
+      "wall_s": 290.7
+    },
+    "unconstrained": {
+      "accuracy": {
+        "n": 36,
+        "mean": 0.04892954897102614,
+        "std": 0.016163925802766165,
+        "median": 0.047532081505096406,
+        "p90": 0.0717652969244602,
+        "p95": 0.07807037903450079,
+        "max": 0.09185449760139255,
+        "min": 0.020467690082112484
+      },
+      "validity": {
+        "n_queries": 36,
+        "n_outside": 17,
+        "max_ratio": 1.8963047119563203,
+        "n_outside_spectral": 4,
+        "leaf_active_fraction": 0.0
+      },
+      "wall_s": 14.0
+    }
+  }
+}

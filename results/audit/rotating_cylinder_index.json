@@ -1,0 +1,232 @@
+{
+ "benchmark": "rotating_cylinder",
+ "description": "2-D lattice Boltzmann cylinder with a rotating wall and free-slip side walls",
+ "generator": "solvers/generate_rotating_cylinder.py",
+ "Re_definition": "U a / nu on the radius a = 20",
+ "alpha_definition": "Omega a / U",
+ "steps": 40000,
+ "discarded": 10000,
+ "every": 30,
+ "n_snapshots": 1000,
+ "field": "velocity magnitude, every second lattice point",
+ "n": 23400,
+ "split_rule": "checkerboard: train where (i + j) is even on the 6 x 6 grid",
+ "entries": [
+  {
+   "Re": 20.0,
+   "alpha": 0.0,
+   "file": "p_000.npy",
+   "split": "train"
+  },
+  {
+   "Re": 20.0,
+   "alpha": 0.5,
+   "file": "p_001.npy",
+   "split": "test"
+  },
+  {
+   "Re": 20.0,
+   "alpha": 1.0,
+   "file": "p_002.npy",
+   "split": "train"
+  },
+  {
+   "Re": 20.0,
+   "alpha": 1.5,
+   "file": "p_003.npy",
+   "split": "test"
+  },
+  {
+   "Re": 20.0,
+   "alpha": 2.0,
+   "file": "p_004.npy",
+   "split": "train"
+  },
+  {
+   "Re": 20.0,
+   "alpha": 2.5,
+   "file": "p_005.npy",
+   "split": "test"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 0.0,
+   "file": "p_006.npy",
+   "split": "test"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 0.5,
+   "file": "p_007.npy",
+   "split": "train"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 1.0,
+   "file": "p_008.npy",
+   "split": "test"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 1.5,
+   "file": "p_009.npy",
+   "split": "train"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 2.0,
+   "file": "p_010.npy",
+   "split": "test"
+  },
+  {
+   "Re": 34.0,
+   "alpha": 2.5,
+   "file": "p_011.npy",
+   "split": "train"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 0.0,
+   "file": "p_012.npy",
+   "split": "train"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 0.5,
+   "file": "p_013.npy",
+   "split": "test"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 1.0,
+   "file": "p_014.npy",
+   "split": "train"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 1.5,
+   "file": "p_015.npy",
+   "split": "test"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 2.0,
+   "file": "p_016.npy",
+   "split": "train"
+  },
+  {
+   "Re": 48.0,
+   "alpha": 2.5,
+   "file": "p_017.npy",
+   "split": "test"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 0.0,
+   "file": "p_018.npy",
+   "split": "test"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 0.5,
+   "file": "p_019.npy",
+   "split": "train"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 1.0,
+   "file": "p_020.npy",
+   "split": "test"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 1.5,
+   "file": "p_021.npy",
+   "split": "train"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 2.0,
+   "file": "p_022.npy",
+   "split": "test"
+  },
+  {
+   "Re": 62.0,
+   "alpha": 2.5,
+   "file": "p_023.npy",
+   "split": "train"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 0.0,
+   "file": "p_024.npy",
+   "split": "train"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 0.5,
+   "file": "p_025.npy",
+   "split": "test"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 1.0,
+   "file": "p_026.npy",
+   "split": "train"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 1.5,
+   "file": "p_027.npy",
+   "split": "test"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 2.0,
+   "file": "p_028.npy",
+   "split": "train"
+  },
+  {
+   "Re": 76.0,
+   "alpha": 2.5,
+   "file": "p_029.npy",
+   "split": "test"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 0.0,
+   "file": "p_030.npy",
+   "split": "test"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 0.5,
+   "file": "p_031.npy",
+   "split": "train"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 1.0,
+   "file": "p_032.npy",
+   "split": "test"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 1.5,
+   "file": "p_033.npy",
+   "split": "train"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 2.0,
+   "file": "p_034.npy",
+   "split": "test"
+  },
+  {
+   "Re": 90.0,
+   "alpha": 2.5,
+   "file": "p_035.npy",
+   "split": "train"
+  }
+ ]
+}

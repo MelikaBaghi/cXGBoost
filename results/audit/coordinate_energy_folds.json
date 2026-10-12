@@ -126,5 +126,37 @@
     "mean": 1.0000000000000002,
     "min": 0.9999999999999998,
     "max": 1.0000000000000004
+  },
+  "rotating_cylinder": {
+    "folds": [
+      {
+        "n_train": 28,
+        "realised": 20,
+        "retained_energy": 0.9955988075585336
+      },
+      {
+        "n_train": 29,
+        "realised": 20,
+        "retained_energy": 0.9986130429653348
+      },
+      {
+        "n_train": 29,
+        "realised": 20,
+        "retained_energy": 0.997430469258775
+      },
+      {
+        "n_train": 29,
+        "realised": 20,
+        "retained_energy": 0.9989062775373245
+      },
+      {
+        "n_train": 29,
+        "realised": 20,
+        "retained_energy": 0.9990687997223263
+      }
+    ],
+    "mean": 0.9979234794084588,
+    "min": 0.9955988075585336,
+    "max": 0.9990687997223263
   }
 }

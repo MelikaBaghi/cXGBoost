@@ -1,0 +1,87 @@
+{
+  "benchmark": "rotating_cylinder",
+  "n_points": 36,
+  "shape": [
+    23400,
+    5
+  ],
+  "folds": 5,
+  "seed": 42,
+  "log_variant": "projected",
+  "snapshot_mode": "native",
+  "truncation_floor": 0.035975016646401015,
+  "mapping": "pca",
+  "hyperparameters": {
+    "n_estimators": 150,
+    "learning_rate": 0.1,
+    "max_depth": 2
+  },
+  "summary": {
+    "cXGBoost": {
+      "n": 36,
+      "mean": 0.06566853866321257,
+      "std": 0.0347422625922088,
+      "median": 0.056667285913504825,
+      "p90": 0.12149954035351701,
+      "p95": 0.13465919024882456,
+      "max": 0.15493372002158923,
+      "min": 0.022024336240765864
+    },
+    "Interpolation": {
+      "n": 36,
+      "mean": 0.08277841325357353,
+      "std": 0.02944783470725214,
+      "median": 0.07720311935596749,
+      "p90": 0.12681320547815778,
+      "p95": 0.14599125703225732,
+      "max": 0.15931254545533582,
+      "min": 0.045771317414251576
+    },
+    "pGP": {
+      "n": 36,
+      "mean": 0.07141942854648538,
+      "std": 0.040549672321410615,
+      "median": 0.058049256978692794,
+      "p90": 0.11902825496527072,
+      "p95": 0.14301219138481966,
+      "max": 0.1758602246702235,
+      "min": 0.023008148475587083
+    }
+  },
+  "diagnostics": {
+    "cXGBoost": {
+      "tangent_norm_max": 1.6118392875945133,
+      "tangent_norm_median": 1.3280312828773293,
+      "frac_outside_ball": 0.07857142857142857,
+      "frac_outside_ball_spectral": 0.0,
+      "leaf_active_fraction": 0.845321996254123,
+      "n_leaves": 1036.8
+    },
+    "Interpolation": {
+      "tangent_norm_max": 1.4888430646773259,
+      "tangent_norm_median": 1.12113078413354,
+      "frac_outside_ball": 0.08571428571428572,
+      "frac_outside_ball_spectral": 0.0
+    },
+    "pGP": {
+      "tangent_norm_max": 2.4451087455143936,
+      "tangent_norm_median": 1.3655034574580345,
+      "frac_outside_ball": 0.3,
+      "frac_outside_ball_spectral": 0.13571428571428573
+    }
+  },
+  "paired_test": {
+    "n": 36,
+    "statistic": 151.0,
+    "p_value": 0.003492006682790816,
+    "effect_size": -0.5465465465465466,
+    "median_diff": -0.015536610643801544
+  },
+  "paired_test_vs_pgp": {
+    "n": 36,
+    "statistic": 280.0,
+    "p_value": 0.41403430147329345,
+    "effect_size": -0.15915915915915915,
+    "median_diff": -0.0012191719146394525
+  }
+}

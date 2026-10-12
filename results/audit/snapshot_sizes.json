@@ -406,5 +406,64 @@
         9
       ]
     ]
+  },
+  "rotating_cylinder": {
+    "n_parameters": 36,
+    "n": 23400,
+    "r": 5,
+    "mu_min": [
+      20.0,
+      0.0
+    ],
+    "mu_max": [
+      90.0,
+      2.5
+    ],
+    "mu_values": [
+      [
+        20.0,
+        34.0,
+        48.0,
+        62.0,
+        76.0,
+        90.0
+      ],
+      [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0,
+        2.5
+      ]
+    ],
+    "snapshots_min": 1000,
+    "snapshots_max": 1000,
+    "folds": [
+      {
+        "n_train": 28,
+        "n_test": 8
+      },
+      {
+        "n_train": 29,
+        "n_test": 7
+      },
+      {
+        "n_train": 29,
+        "n_test": 7
+      },
+      {
+        "n_train": 29,
+        "n_test": 7
+      },
+      {
+        "n_train": 29,
+        "n_test": 7
+      }
+    ],
+    "fixed_split": {
+      "n_train": 18,
+      "n_test": 18
+    }
   }
 }
