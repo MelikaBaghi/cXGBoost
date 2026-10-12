@@ -20,14 +20,19 @@ against every ball of the leaf. If the check fails, because the iteration has
 not converged within the sweep limit, the iterate is scaled towards zero by the
 largest factor that satisfies every ball. The leaf value is therefore feasible
 in every case, but after that scaling it is no longer the projection. In the
-fits reported in the paper this happened at 56%, 25%, 30% and 2.4% of the
-Dykstra calls on the cylinder, Kolmogorov, Kuramoto-Sivashinsky and the beam,
-candidate splits included (`results/projection_cost_jcp2/cost_fallbacks.json`). The fitted ensemble
-satisfies the bound at every training parameter and at every truncation. At a new parameter the predictor
-checks the bound and, if the raw ensemble output lies outside it, shrinks the
-tangent back onto the ball before decoding (`safeguard=True`, the default). The
-paper reports how often that step acts, which is at two of 25 held-out
-parameters on one example and never on the other three.
+fits reported in the paper this happened at 56%, 25% and 30% of the Dykstra
+calls on the cylinder, Kolmogorov and Kuramoto-Sivashinsky, and at 28% on the
+rotating cylinder, candidate splits included
+(`results/projection_cost_jcp2/cost_fallbacks.json`). The fitted ensemble
+satisfies the bound at every training parameter and at every truncation. At a
+new parameter the predictor checks the bound and, if the raw ensemble output
+lies outside it, shrinks the tangent back onto the ball before decoding
+(`safeguard=True`, the default). The paper reports how often that step acts. It
+never acts on the three examples with a scalar parameter, and acts at 3 of the
+36 held-out pairs of the rotating cylinder, which has two parameters.
+`results/` also keeps the beam example of an earlier version of the paper,
+where the scaled iterate replaced the projection at 2.4% of the Dykstra calls
+and the safeguard acted at 2 of 25 held-out parameters.
 
 ## Use
 
@@ -65,8 +70,8 @@ manuscript, currently under review, gives the original sources.
 ## Citation
 
 If you use this code, please cite the manuscript, Baghi, Liu and Paynabar,
-Constrained Extreme Gradient Boosting for Parametric POD Subspace Prediction,
-under review.
+Constrained Extreme Gradient Boosting for Parametric Proper Orthogonal
+Decomposition Subspace Prediction, under review.
 
 ## Licence
 
