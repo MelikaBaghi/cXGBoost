@@ -1,0 +1,42 @@
+{
+  "case": "cylinder",
+  "fold": 0,
+  "every": 40,
+  "active_solves": 40209,
+  "compared": 1005,
+  "interior_point_failures": 0,
+  "fold_mean_error": 0.10623084934649067,
+  "closed_form": {
+    "n": 134,
+    "gap_median": -4.288496422578318e-09,
+    "gap_p90": -4.883890965708102e-10,
+    "gap_max": 1.8097214374633356e-10,
+    "dist_median": 3.767564411842983e-06,
+    "dist_max": 0.00013502210417380212,
+    "n_active_median": 2.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 1.000000000003709
+  },
+  "dykstra_converged": {
+    "n": 382,
+    "gap_median": -2.2582041747150384e-09,
+    "gap_p90": 1.6593414431379134e-08,
+    "gap_max": 0.0010701556348076532,
+    "dist_median": 1.7001207812797175e-05,
+    "dist_max": 0.07990817380418214,
+    "n_active_median": 7.0,
+    "worst_norm_code": 1.000000000205869,
+    "worst_norm_ip": 1.0000000002435914
+  },
+  "scaled_iterate": {
+    "n": 489,
+    "gap_median": 2.1338142013197874e-05,
+    "gap_p90": 0.00038728029200582885,
+    "gap_max": 0.0009658123397708018,
+    "dist_median": 0.005091836816218194,
+    "dist_max": 0.9368825798353922,
+    "n_active_median": 12.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 0.999999999999999
+  }
+}
