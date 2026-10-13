@@ -1,0 +1,31 @@
+{
+  "case": "beam",
+  "fold": 0,
+  "every": 40,
+  "active_solves": 2581,
+  "compared": 64,
+  "interior_point_failures": 0,
+  "fold_mean_error": 0.05897544728838864,
+  "closed_form": {
+    "n": 58,
+    "gap_median": -1.1516469629036173e-09,
+    "gap_p90": -3.757203453745678e-11,
+    "gap_max": 1.3905314341308793e-09,
+    "dist_median": 1.941296960759059e-05,
+    "dist_max": 0.0004907984186161246,
+    "n_active_median": 2.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 1.0000000000360605
+  },
+  "dykstra_converged": {
+    "n": 6,
+    "gap_median": 0.0009286863835339135,
+    "gap_p90": 0.0011213616358317783,
+    "gap_max": 0.0011583150985142161,
+    "dist_median": 0.2915812802268467,
+    "dist_max": 0.41494240028369433,
+    "n_active_median": 3.0,
+    "worst_norm_code": 1.0000000000000002,
+    "worst_norm_ip": 0.999999999998423
+  }
+}
