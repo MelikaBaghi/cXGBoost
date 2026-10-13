@@ -1,0 +1,606 @@
+{
+ "subset": "without_roundoff",
+ "n": 34,
+ "dropped": [
+  15,
+  16,
+  17,
+  18,
+  26,
+  27,
+  28,
+  29,
+  30,
+  31
+ ],
+ "protocol": {
+  "folds": 5,
+  "seed": 42,
+  "hyperparameters": {
+   "n_estimators": 150,
+   "learning_rate": 0.3,
+   "max_depth": 4
+  },
+  "mapping": "pca"
+ },
+ "mean": {
+  "cXGBoost": 0.471046688078501,
+  "pGP": 0.5000541101458383,
+  "Interpolation": 0.7385445942219674
+ },
+ "median": {
+  "cXGBoost": 0.498037323790376,
+  "pGP": 0.4949928810953781,
+  "Interpolation": 0.7432698758800382
+ },
+ "cxgboost_lower_than": {
+  "pGP": 22,
+  "Interpolation": 34
+ },
+ "folds_cxgboost_lowest": 4,
+ "raw": {
+  "cXGBoost": {
+   "past_bound": 0,
+   "outside_one_to_one": 0,
+   "outside_one_to_one_at": [],
+   "max_norm": 0.9999998764857057
+  },
+  "unconstrained": {
+   "past_bound": 32,
+   "outside_one_to_one": 3,
+   "outside_one_to_one_at": [
+    19,
+    24,
+    49
+   ],
+   "max_norm": 2.060188697567219
+  }
+ },
+ "per_length": {
+  "12": {
+   "fold": 2,
+   "cXGBoost": 0.6311798435881765,
+   "pGP": 0.767352732007227,
+   "Interpolation": 0.8371561007896091,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999623809644584,
+     "spectral": 0.5523025291254257
+    },
+    "unconstrained": {
+     "frobenius": 1.7774500332545924,
+     "spectral": 0.9887447648114821
+    }
+   }
+  },
+  "13": {
+   "fold": 4,
+   "cXGBoost": 0.6277177278121198,
+   "pGP": 0.7468420949260702,
+   "Interpolation": 0.7293999905653782,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999592337517842,
+     "spectral": 0.6188712425915748
+    },
+    "unconstrained": {
+     "frobenius": 1.3989953263795203,
+     "spectral": 0.8595086979009934
+    }
+   }
+  },
+  "14": {
+   "fold": 4,
+   "cXGBoost": 0.6201671811816982,
+   "pGP": 0.9048687941952773,
+   "Interpolation": 0.7691913825485988,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999592337517842,
+     "spectral": 0.6188712425915748
+    },
+    "unconstrained": {
+     "frobenius": 1.3989953263795203,
+     "spectral": 0.8595086979009934
+    }
+   }
+  },
+  "19": {
+   "fold": 2,
+   "cXGBoost": 0.5392265650002035,
+   "pGP": 0.6872061683678895,
+   "Interpolation": 0.6919377683348003,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999432294728161,
+     "spectral": 0.5560098071140016
+    },
+    "unconstrained": {
+     "frobenius": 1.8795018498142455,
+     "spectral": 1.0068329376994651
+    }
+   }
+  },
+  "20": {
+   "fold": 4,
+   "cXGBoost": 0.5455555494964077,
+   "pGP": 0.5530035734160995,
+   "Interpolation": 0.7173067484871586,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999592337517842,
+     "spectral": 0.6188712425915748
+    },
+    "unconstrained": {
+     "frobenius": 1.3989953263795203,
+     "spectral": 0.8595086979009934
+    }
+   }
+  },
+  "21": {
+   "fold": 0,
+   "cXGBoost": 0.41739313195311817,
+   "pGP": 0.4797447052453857,
+   "Interpolation": 0.89654246258772,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999407156149189,
+     "spectral": 0.5583232313304429
+    },
+    "unconstrained": {
+     "frobenius": 1.7096957604918244,
+     "spectral": 0.944798650954682
+    }
+   }
+  },
+  "22": {
+   "fold": 1,
+   "cXGBoost": 0.49723266867255034,
+   "pGP": 0.4567698990130638,
+   "Interpolation": 0.758619926898225,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9998204480164872,
+     "spectral": 0.5617330444591981
+    },
+    "unconstrained": {
+     "frobenius": 1.7831784629841214,
+     "spectral": 0.9704280523254001
+    }
+   }
+  },
+  "23": {
+   "fold": 0,
+   "cXGBoost": 0.641105181319681,
+   "pGP": 0.605328668211405,
+   "Interpolation": 0.7596558026660393,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9997944298775469,
+     "spectral": 0.6499166866470311
+    },
+    "unconstrained": {
+     "frobenius": 1.4828103986165322,
+     "spectral": 0.9269350573351794
+    }
+   }
+  },
+  "24": {
+   "fold": 4,
+   "cXGBoost": 0.49884197890820164,
+   "pGP": 0.4960151024588071,
+   "Interpolation": 0.7505425316659853,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999997657537472,
+     "spectral": 0.5494343306537013
+    },
+    "unconstrained": {
+     "frobenius": 1.8540437376396108,
+     "spectral": 1.0098725451401567
+    }
+   }
+  },
+  "25": {
+   "fold": 2,
+   "cXGBoost": 0.5061539076713764,
+   "pGP": 0.625845032069225,
+   "Interpolation": 0.8213437879514791,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.999929160027562,
+     "spectral": 0.5212416962291593
+    },
+    "unconstrained": {
+     "frobenius": 1.667921026791324,
+     "spectral": 0.9037145234463535
+    }
+   }
+  },
+  "32": {
+   "fold": 0,
+   "cXGBoost": 0.33089462387914576,
+   "pGP": 0.4659930843844947,
+   "Interpolation": 0.9096336248219216,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.999992677485134,
+     "spectral": 0.5714397253449797
+    },
+    "unconstrained": {
+     "frobenius": 1.6476519735349158,
+     "spectral": 0.945237914215861
+    }
+   }
+  },
+  "33": {
+   "fold": 3,
+   "cXGBoost": 0.17691597352982652,
+   "pGP": 0.1616807718174024,
+   "Interpolation": 0.90932103145085,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999621190716358,
+     "spectral": 0.5278839069236246
+    },
+    "unconstrained": {
+     "frobenius": 1.7290954258421913,
+     "spectral": 0.9323732275647716
+    }
+   }
+  },
+  "34": {
+   "fold": 3,
+   "cXGBoost": 0.10308775422699598,
+   "pGP": 0.17005275736522305,
+   "Interpolation": 0.7528123133964604,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999494257943486,
+     "spectral": 0.5630569018110946
+    },
+    "unconstrained": {
+     "frobenius": 1.2738270991011655,
+     "spectral": 0.7350123920408961
+    }
+   }
+  },
+  "35": {
+   "fold": 4,
+   "cXGBoost": 0.3309932886748241,
+   "pGP": 0.29981488647023175,
+   "Interpolation": 0.8731082517107854,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999943700604166,
+     "spectral": 0.5519509569879836
+    },
+    "unconstrained": {
+     "frobenius": 1.652839874934366,
+     "spectral": 0.8994462740028336
+    }
+   }
+  },
+  "36": {
+   "fold": 3,
+   "cXGBoost": 0.4600479930764889,
+   "pGP": 0.49675924869343335,
+   "Interpolation": 0.7880134438843897,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999494257943486,
+     "spectral": 0.5630569018110946
+    },
+    "unconstrained": {
+     "frobenius": 1.2738270991011655,
+     "spectral": 0.7350123920408961
+    }
+   }
+  },
+  "37": {
+   "fold": 2,
+   "cXGBoost": 0.5030522958268869,
+   "pGP": 0.532591120600959,
+   "Interpolation": 0.7298207227040984,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9998909575499585,
+     "spectral": 0.7473131234695182
+    },
+    "unconstrained": {
+     "frobenius": 1.259059099649786,
+     "spectral": 0.9346694243515842
+    }
+   }
+  },
+  "38": {
+   "fold": 2,
+   "cXGBoost": 0.6662650842554223,
+   "pGP": 0.6741480842845798,
+   "Interpolation": 0.7269011162374812,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.7335788543770629,
+     "spectral": 0.5340905169103565
+    },
+    "unconstrained": {
+     "frobenius": 0.770935582766096,
+     "spectral": 0.5616348348410101
+    }
+   }
+  },
+  "39": {
+   "fold": 3,
+   "cXGBoost": 0.4849280277825604,
+   "pGP": 0.4502008082169183,
+   "Interpolation": 0.5656806224183256,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.4772370145098554,
+     "spectral": 0.2864830918534732
+    },
+    "unconstrained": {
+     "frobenius": 0.4546584646997395,
+     "spectral": 0.27420323134289387
+    }
+   }
+  },
+  "40": {
+   "fold": 1,
+   "cXGBoost": 0.3500686497289566,
+   "pGP": 0.36075350081041196,
+   "Interpolation": 0.8679765376896339,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999068227448761,
+     "spectral": 0.6427936256089618
+    },
+    "unconstrained": {
+     "frobenius": 1.1320495527133576,
+     "spectral": 0.7242040829936511
+    }
+   }
+  },
+  "41": {
+   "fold": 0,
+   "cXGBoost": 0.36305368420257345,
+   "pGP": 0.4049479346160344,
+   "Interpolation": 0.5385212681335931,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999950763389005,
+     "spectral": 0.6005688761380061
+    },
+    "unconstrained": {
+     "frobenius": 1.4627245564807205,
+     "spectral": 0.9357159335902996
+    }
+   }
+  },
+  "42": {
+   "fold": 1,
+   "cXGBoost": 0.4328039227037689,
+   "pGP": 0.4330765444961674,
+   "Interpolation": 0.7294422328689308,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9998894399276129,
+     "spectral": 0.6220369571453253
+    },
+    "unconstrained": {
+     "frobenius": 1.0734956149544994,
+     "spectral": 0.6682013169451033
+    }
+   }
+  },
+  "43": {
+   "fold": 3,
+   "cXGBoost": 0.4830482850232771,
+   "pGP": 0.49397065973194915,
+   "Interpolation": 0.5700805883150545,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999477500599634,
+     "spectral": 0.5673131566905455
+    },
+    "unconstrained": {
+     "frobenius": 1.547751972239022,
+     "spectral": 0.8997299301930652
+    }
+   }
+  },
+  "44": {
+   "fold": 1,
+   "cXGBoost": 0.49001034581946534,
+   "pGP": 0.5679538378338005,
+   "Interpolation": 0.6980783803515286,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999075592320336,
+     "spectral": 0.6817852493680453
+    },
+    "unconstrained": {
+     "frobenius": 1.156446744875057,
+     "spectral": 0.7908694816858894
+    }
+   }
+  },
+  "45": {
+   "fold": 1,
+   "cXGBoost": 0.5553888274813901,
+   "pGP": 0.5602780270847716,
+   "Interpolation": 0.7320044368921103,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999255252866269,
+     "spectral": 0.5260354940297549
+    },
+    "unconstrained": {
+     "frobenius": 1.7772888755653766,
+     "spectral": 0.9170853440333463
+    }
+   }
+  },
+  "46": {
+   "fold": 0,
+   "cXGBoost": 0.26015048435271515,
+   "pGP": 0.3024029632749914,
+   "Interpolation": 0.8842280635031726,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999920323837188,
+     "spectral": 0.6408574464362133
+    },
+    "unconstrained": {
+     "frobenius": 1.4345997893671347,
+     "spectral": 0.92999209734352
+    }
+   }
+  },
+  "47": {
+   "fold": 2,
+   "cXGBoost": 0.10400764546403249,
+   "pGP": 0.19280530188228232,
+   "Interpolation": 0.5480570378656457,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999459989556067,
+     "spectral": 0.5582040309385076
+    },
+    "unconstrained": {
+     "frobenius": 1.6789105603524257,
+     "spectral": 0.9543011079787178
+    }
+   }
+  },
+  "48": {
+   "fold": 2,
+   "cXGBoost": 0.5645662569759413,
+   "pGP": 0.3907776327205557,
+   "Interpolation": 0.7421880033181821,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999486374436353,
+     "spectral": 0.5875079175504184
+    },
+    "unconstrained": {
+     "frobenius": 1.765092937104215,
+     "spectral": 0.9900320783912816
+    }
+   }
+  },
+  "49": {
+   "fold": 3,
+   "cXGBoost": 0.4957051835407844,
+   "pGP": 0.40630943219401744,
+   "Interpolation": 0.6705378941588465,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999038681038416,
+     "spectral": 0.4864774490373801
+    },
+    "unconstrained": {
+     "frobenius": 2.060188697567219,
+     "spectral": 1.017983027691245
+    }
+   }
+  },
+  "50": {
+   "fold": 1,
+   "cXGBoost": 0.273323771007896,
+   "pGP": 0.33973454551039656,
+   "Interpolation": 0.5013440583864401,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999233613072825,
+     "spectral": 0.5127855976078999
+    },
+    "unconstrained": {
+     "frobenius": 1.8469444399505675,
+     "spectral": 0.9533869864804372
+    }
+   }
+  },
+  "51": {
+   "fold": 0,
+   "cXGBoost": 0.6850663728867015,
+   "pGP": 0.6737214962457958,
+   "Interpolation": 0.6935436482139116,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9998377470716777,
+     "spectral": 0.5437113301681655
+    },
+    "unconstrained": {
+     "frobenius": 1.5910072055663382,
+     "spectral": 0.8915190460127709
+    }
+   }
+  },
+  "52": {
+   "fold": 1,
+   "cXGBoost": 0.6388356338061943,
+   "pGP": 0.6237762831415282,
+   "Interpolation": 0.7806330970772116,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999522450428938,
+     "spectral": 0.5961178020337103
+    },
+    "unconstrained": {
+     "frobenius": 1.6991449283655817,
+     "spectral": 0.9773173132583989
+    }
+   }
+  },
+  "53": {
+   "fold": 4,
+   "cXGBoost": 0.5495418469493983,
+   "pGP": 0.5556121787392659,
+   "Interpolation": 0.7443517484418942,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999998764857057,
+     "spectral": 0.6067676727558322
+    },
+    "unconstrained": {
+     "frobenius": 1.397020510054383,
+     "spectral": 0.871994777302204
+    }
+   }
+  },
+  "54": {
+   "fold": 3,
+   "cXGBoost": 0.5012413884357454,
+   "pGP": 0.4913024496415028,
+   "Interpolation": 0.6245367991826252,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999498283750506,
+     "spectral": 0.536168726301352
+    },
+    "unconstrained": {
+     "frobenius": 1.321481077942885,
+     "spectral": 0.7037118292422617
+    }
+   }
+  },
+  "55": {
+   "fold": 0,
+   "cXGBoost": 0.6880163194345094,
+   "pGP": 0.6301994252913381,
+   "Interpolation": 0.7980047800288034,
+   "raw": {
+    "cXGBoost": {
+     "frobenius": 0.9999995507571359,
+     "spectral": 0.5236243629550709
+    },
+    "unconstrained": {
+     "frobenius": 1.4749431025401825,
+     "spectral": 0.7827376294623837
+    }
+   }
+  }
+ },
+ "wall_s": 528.6
+}
