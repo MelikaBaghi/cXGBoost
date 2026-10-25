@@ -18,5 +18,15 @@
     "max_depth": 4,
     "learning_rate": 0.1,
     "n_estimators": 50
+  },
+  "kolmogorov": {
+    "n_estimators": 50,
+    "learning_rate": 0.1,
+    "max_depth": 2
+  },
+  "ks": {
+    "n_estimators": 50,
+    "learning_rate": 0.1,
+    "max_depth": 3
   }
 }

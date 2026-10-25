@@ -6,760 +6,751 @@
   "folds": 5,
   "seed": 42,
   "hyperparameters": {
-   "n_estimators": 150,
-   "learning_rate": 0.3,
-   "max_depth": 4
+   "n_estimators": 50,
+   "learning_rate": 0.1,
+   "max_depth": 3
   },
   "mapping": "pca"
  },
  "mean": {
-  "cXGBoost": 0.39568717097243533,
+  "cXGBoost": 0.3705798767729122,
   "pGP": 0.4550060484948506,
   "Interpolation": 0.6840931735929116
  },
  "median": {
-  "cXGBoost": 0.41888297549345466,
+  "cXGBoost": 0.3775368234631614,
   "pGP": 0.4464389826481319,
   "Interpolation": 0.7152829165876782
  },
  "cxgboost_lower_than": {
-  "pGP": 35,
-  "Interpolation": 43
+  "pGP": 38,
+  "Interpolation": 44
  },
- "folds_cxgboost_lowest": 4,
+ "folds_cxgboost_lowest": 5,
  "raw": {
   "cXGBoost": {
    "past_bound": 0,
    "outside_one_to_one": 0,
    "outside_one_to_one_at": [],
-   "max_norm": 0.9999882011401406
+   "max_norm": 0.9851243682156281
   },
   "unconstrained": {
-   "past_bound": 41,
-   "outside_one_to_one": 8,
-   "outside_one_to_one_at": [
-    15,
-    17,
-    18,
-    22,
-    30,
-    35,
-    44,
-    47
-   ],
-   "max_norm": 2.3417154780726945
+   "past_bound": 18,
+   "outside_one_to_one": 0,
+   "outside_one_to_one_at": [],
+   "max_norm": 1.6665376092657125
   }
  },
  "per_length": {
   "12": {
    "fold": 3,
-   "cXGBoost": 0.6174725655944031,
+   "cXGBoost": 0.6284519922524652,
    "pGP": 0.8098247144818123,
    "Interpolation": 0.7946110558918765,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999377151906588,
-     "spectral": 0.603205287127459
+     "frobenius": 0.9842601376686224,
+     "spectral": 0.5944511104287531
     },
     "unconstrained": {
-     "frobenius": 1.5789945924523927,
-     "spectral": 0.9313314687739785
+     "frobenius": 1.4771807483523893,
+     "spectral": 0.878053910786511
     }
    }
   },
   "13": {
    "fold": 4,
-   "cXGBoost": 0.5964954307216904,
+   "cXGBoost": 0.5481396244841565,
    "pGP": 0.7744071383983139,
    "Interpolation": 0.8326368476404197,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999835122016686,
-     "spectral": 0.5538898371151237
+     "frobenius": 0.9806134259838002,
+     "spectral": 0.5792839815375102
     },
     "unconstrained": {
-     "frobenius": 1.3366893997912939,
-     "spectral": 0.7308871758337656
+     "frobenius": 1.2647502754134665,
+     "spectral": 0.725700626841307
     }
    }
   },
   "14": {
    "fold": 4,
-   "cXGBoost": 0.5856830216410533,
+   "cXGBoost": 0.5358463244105286,
    "pGP": 0.7962148846295332,
    "Interpolation": 0.7905390263717156,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999835122016686,
-     "spectral": 0.5538898371151237
+     "frobenius": 0.9806134259838002,
+     "spectral": 0.5792839815375102
     },
     "unconstrained": {
-     "frobenius": 1.3366893997912939,
-     "spectral": 0.7308871758337656
+     "frobenius": 1.2647502754134665,
+     "spectral": 0.725700626841307
     }
    }
   },
   "15": {
    "fold": 2,
-   "cXGBoost": 0.2746034993425077,
+   "cXGBoost": 0.181548392233357,
    "pGP": 0.33355333986117525,
    "Interpolation": 0.7867755540122351,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999257946095027,
-     "spectral": 0.5666164044399177
+     "frobenius": 0.9080779296073187,
+     "spectral": 0.5233214269675005
     },
     "unconstrained": {
-     "frobenius": 1.7400341486873725,
-     "spectral": 1.0193995795366806
+     "frobenius": 1.0792086472716844,
+     "spectral": 0.5724215813062533
     }
    }
   },
   "16": {
    "fold": 0,
-   "cXGBoost": 0.21868633939281468,
+   "cXGBoost": 0.15568536482901602,
    "pGP": 0.3494692390476548,
    "Interpolation": 0.7849899406378854,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999481893251305,
-     "spectral": 0.45421966301925315
+     "frobenius": 0.9501209393533433,
+     "spectral": 0.4539258833589032
     },
     "unconstrained": {
-     "frobenius": 2.1030827207943643,
-     "spectral": 0.9291008905114098
+     "frobenius": 1.2570661008945212,
+     "spectral": 0.5918115583258025
     }
    }
   },
   "17": {
    "fold": 1,
-   "cXGBoost": 0.16273657109255288,
+   "cXGBoost": 0.11017682579228033,
    "pGP": 0.2263164304769873,
    "Interpolation": 0.7101272135361574,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998541110887034,
-     "spectral": 0.5072701344662358
+     "frobenius": 0.9753651899615693,
+     "spectral": 0.5064163589092288
     },
     "unconstrained": {
-     "frobenius": 2.0437882451938703,
-     "spectral": 1.0080337320321535
+     "frobenius": 1.4932815675325763,
+     "spectral": 0.779936383007538
     }
    }
   },
   "18": {
    "fold": 2,
-   "cXGBoost": 0.3080990611605496,
+   "cXGBoost": 0.1800552023981084,
    "pGP": 0.34393048181982705,
    "Interpolation": 0.7130556985520324,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998328123058827,
-     "spectral": 0.4479827218067203
+     "frobenius": 0.9698446211605819,
+     "spectral": 0.4857523660826739
     },
     "unconstrained": {
-     "frobenius": 2.3417154780726945,
-     "spectral": 1.0336256409799742
+     "frobenius": 1.6665376092657125,
+     "spectral": 0.8692181929932277
     }
    }
   },
   "19": {
    "fold": 0,
-   "cXGBoost": 0.24077840579063017,
+   "cXGBoost": 0.18540651697116536,
    "pGP": 0.3541379488475476,
    "Interpolation": 0.7574303573570327,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999109214928402,
-     "spectral": 0.4781072970129206
+     "frobenius": 0.9632812030546711,
+     "spectral": 0.5036032819341303
     },
     "unconstrained": {
-     "frobenius": 2.194097647864106,
-     "spectral": 0.9930608182942648
+     "frobenius": 1.5141913747017863,
+     "spectral": 0.775889970471965
     }
    }
   },
   "20": {
    "fold": 4,
-   "cXGBoost": 0.56764172336922,
+   "cXGBoost": 0.5781252931922541,
    "pGP": 0.638204817436063,
    "Interpolation": 0.779032255742988,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9977973033139025,
-     "spectral": 0.5622640115998414
+     "frobenius": 0.9783815624989998,
+     "spectral": 0.5032822521097849
     },
     "unconstrained": {
-     "frobenius": 1.903440782907141,
-     "spectral": 0.9776701435180143
+     "frobenius": 1.5860497545857708,
+     "spectral": 0.8296656231556201
     }
    }
   },
   "21": {
    "fold": 3,
-   "cXGBoost": 0.457772345555219,
+   "cXGBoost": 0.4306760535908862,
    "pGP": 0.5309135378482667,
    "Interpolation": 0.8423769414603435,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999403533459527,
-     "spectral": 0.5362582615285392
+     "frobenius": 0.9851243682156281,
+     "spectral": 0.5397853988574947
     },
     "unconstrained": {
-     "frobenius": 1.7782554346145245,
-     "spectral": 0.960217951954141
+     "frobenius": 1.4279430982646195,
+     "spectral": 0.7470811053313967
     }
    }
   },
   "22": {
    "fold": 2,
-   "cXGBoost": 0.4118856679077814,
+   "cXGBoost": 0.39223605900038516,
    "pGP": 0.41435936219091474,
    "Interpolation": 0.7499892175543164,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998439546146421,
-     "spectral": 0.5221331284728464
+     "frobenius": 0.9547165851995705,
+     "spectral": 0.5613892552042302
     },
     "unconstrained": {
-     "frobenius": 1.9293440759456322,
-     "spectral": 1.0291347443040662
+     "frobenius": 1.3147393805062177,
+     "spectral": 0.7621084595587762
     }
    }
   },
   "23": {
    "fold": 3,
-   "cXGBoost": 0.6100985986311722,
+   "cXGBoost": 0.5986752911857789,
    "pGP": 0.6938548948432582,
    "Interpolation": 0.7952375722531023,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999448402893558,
-     "spectral": 0.6399116217204339
+     "frobenius": 0.95137719013064,
+     "spectral": 0.6219080406437655
     },
     "unconstrained": {
-     "frobenius": 1.525666231353161,
-     "spectral": 0.9595333363439266
+     "frobenius": 0.8161357753873844,
+     "spectral": 0.5427197408535884
     }
    }
   },
   "24": {
    "fold": 3,
-   "cXGBoost": 0.46105927121424045,
+   "cXGBoost": 0.4851738832123618,
    "pGP": 0.615486090455981,
    "Interpolation": 0.6981513422266563,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999428744735649,
-     "spectral": 0.5704563573325738
+     "frobenius": 0.9530719399888404,
+     "spectral": 0.5850125162080724
     },
     "unconstrained": {
-     "frobenius": 1.5488285681457885,
-     "spectral": 0.9263048096030696
+     "frobenius": 0.9154869597819062,
+     "spectral": 0.5906558257074195
     }
    }
   },
   "25": {
    "fold": 4,
-   "cXGBoost": 0.3706569971471912,
+   "cXGBoost": 0.36252551013268997,
    "pGP": 0.5919201506476326,
    "Interpolation": 0.701266312972534,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999198943183747,
-     "spectral": 0.653448465794345
+     "frobenius": 0.926408586355503,
+     "spectral": 0.6389584031018894
     },
     "unconstrained": {
-     "frobenius": 1.2937503878871628,
-     "spectral": 0.842994103730409
+     "frobenius": 0.9756438382337834,
+     "spectral": 0.6727758140964771
     }
    }
   },
   "26": {
    "fold": 4,
-   "cXGBoost": 0.23546708772054017,
+   "cXGBoost": 0.20374294913977264,
    "pGP": 0.5187930881223506,
    "Interpolation": 0.779822939354004,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999499273275911,
-     "spectral": 0.6936007562332969
+     "frobenius": 0.9030872133499246,
+     "spectral": 0.6650536404918217
     },
     "unconstrained": {
-     "frobenius": 1.2836558358577241,
-     "spectral": 0.8923145858312601
+     "frobenius": 0.9004260000343955,
+     "spectral": 0.6661753334504815
     }
    }
   },
   "27": {
    "fold": 3,
-   "cXGBoost": 0.4361805596367384,
+   "cXGBoost": 0.43308903257812525,
    "pGP": 0.5808057702886802,
    "Interpolation": 0.7614776638643267,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998640094008783,
-     "spectral": 0.5718514791394034
+     "frobenius": 0.9516123079034093,
+     "spectral": 0.6342472130381451
     },
     "unconstrained": {
-     "frobenius": 1.5112791233428955,
-     "spectral": 0.8789495214947998
+     "frobenius": 0.9403873106200239,
+     "spectral": 0.6248062351718062
     }
    }
   },
   "28": {
    "fold": 1,
-   "cXGBoost": 0.1318048359336224,
+   "cXGBoost": 0.12241746512258642,
    "pGP": 0.13858285348462743,
    "Interpolation": 0.4104933806446002,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9997317399468804,
-     "spectral": 0.7567963356935866
+     "frobenius": 0.8198319787693427,
+     "spectral": 0.6371427434021264
     },
     "unconstrained": {
-     "frobenius": 1.245293472491932,
-     "spectral": 0.9755649145217368
+     "frobenius": 0.7810760437210315,
+     "spectral": 0.6025663861949694
     }
    }
   },
   "29": {
    "fold": 2,
-   "cXGBoost": 0.22275017843332384,
+   "cXGBoost": 0.11085139881421313,
    "pGP": 0.2095587488731983,
    "Interpolation": 0.4834673557875835,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999159563848844,
-     "spectral": 0.6677551600199441
+     "frobenius": 0.9273549529286131,
+     "spectral": 0.7005457451473656
     },
     "unconstrained": {
-     "frobenius": 1.3500939241792307,
-     "spectral": 0.9043946745965856
+     "frobenius": 0.9428835149119373,
+     "spectral": 0.7160214472924968
     }
    }
   },
   "30": {
    "fold": 1,
-   "cXGBoost": 0.158875806650007,
+   "cXGBoost": 0.11446413650691042,
    "pGP": 0.12894675742595077,
    "Interpolation": 0.2766291480651797,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9997510564100405,
-     "spectral": 0.7075574855401185
+     "frobenius": 0.822826583439832,
+     "spectral": 0.580153652914239
     },
     "unconstrained": {
-     "frobenius": 1.4909335153473338,
-     "spectral": 1.0415456613686982
+     "frobenius": 0.6884438952113335,
+     "spectral": 0.4875197783155447
     }
    }
   },
   "31": {
    "fold": 3,
-   "cXGBoost": 0.18678984898697554,
+   "cXGBoost": 0.12663447607304212,
    "pGP": 0.3187121651031805,
    "Interpolation": 0.6161977942847253,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998576093497719,
-     "spectral": 0.6292956920687665
+     "frobenius": 0.9638026093221883,
+     "spectral": 0.6740331997150184
     },
     "unconstrained": {
-     "frobenius": 1.2945463849430086,
-     "spectral": 0.8188973839616603
+     "frobenius": 0.9952005876869875,
+     "spectral": 0.6917198301984969
     }
    }
   },
   "32": {
    "fold": 0,
-   "cXGBoost": 0.08145941994376743,
+   "cXGBoost": 0.06873192048438981,
    "pGP": 0.09940151591164959,
    "Interpolation": 0.12546941927979133,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.33861267980629234,
-     "spectral": 0.2306959825199282
+     "frobenius": 0.38804670048033046,
+     "spectral": 0.3030376181577446
     },
     "unconstrained": {
-     "frobenius": 0.3399186913677073,
-     "spectral": 0.23132286202967056
+     "frobenius": 0.3908140621885516,
+     "spectral": 0.2994377800909852
     }
    }
   },
   "33": {
    "fold": 2,
-   "cXGBoost": 0.11652889733294912,
+   "cXGBoost": 0.0840201047937717,
    "pGP": 0.05475639701160227,
    "Interpolation": 0.15528524579388833,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.8833019267265285,
-     "spectral": 0.7077220575260367
+     "frobenius": 0.7623485157381531,
+     "spectral": 0.5931924907562133
     },
     "unconstrained": {
-     "frobenius": 0.8920021881310004,
-     "spectral": 0.7104657977402057
+     "frobenius": 0.708639067988389,
+     "spectral": 0.543266228968626
     }
    }
   },
   "34": {
    "fold": 3,
-   "cXGBoost": 0.10457106744326077,
+   "cXGBoost": 0.12740006982404248,
    "pGP": 0.14029882117964237,
    "Interpolation": 0.5810530050343342,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999100154401177,
-     "spectral": 0.5323444946567657
+     "frobenius": 0.9525543114407948,
+     "spectral": 0.565445435595107
     },
     "unconstrained": {
-     "frobenius": 1.655898279321504,
-     "spectral": 0.9220732536586722
+     "frobenius": 1.1911486740347557,
+     "spectral": 0.6733059010383114
     }
    }
   },
   "35": {
    "fold": 0,
-   "cXGBoost": 0.3575591514731869,
+   "cXGBoost": 0.3298583616611241,
    "pGP": 0.34399995222715685,
    "Interpolation": 0.5781699085473135,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999118002104783,
-     "spectral": 0.6337147625192114
+     "frobenius": 0.7800496836925628,
+     "spectral": 0.554508964323965
     },
     "unconstrained": {
-     "frobenius": 1.5994088731915945,
-     "spectral": 1.0472424954428625
+     "frobenius": 0.8271907939051502,
+     "spectral": 0.5866974555712265
     }
    }
   },
   "36": {
    "fold": 1,
-   "cXGBoost": 0.5481938733836312,
+   "cXGBoost": 0.5731001487941717,
    "pGP": 0.6052325699830635,
    "Interpolation": 0.6711297132227518,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999674106495865,
-     "spectral": 0.6706962688744591
+     "frobenius": 0.7789650809868721,
+     "spectral": 0.5322264547371915
     },
     "unconstrained": {
-     "frobenius": 1.3884956096837717,
-     "spectral": 0.924579029937146
+     "frobenius": 0.7505895193097618,
+     "spectral": 0.5184497446400119
     }
    }
   },
   "37": {
    "fold": 0,
-   "cXGBoost": 0.48899062046439906,
+   "cXGBoost": 0.44989845053597033,
    "pGP": 0.42823253207366835,
    "Interpolation": 0.648084486937763,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999102369540034,
-     "spectral": 0.6605779406860823
+     "frobenius": 0.7713176894583806,
+     "spectral": 0.5073127900766159
     },
     "unconstrained": {
-     "frobenius": 1.2512651068183114,
-     "spectral": 0.8284825682397983
+     "frobenius": 0.774718344387311,
+     "spectral": 0.514702295990583
     }
    }
   },
   "38": {
    "fold": 2,
-   "cXGBoost": 0.7352211494775006,
+   "cXGBoost": 0.6932095921266027,
    "pGP": 0.7368126101785395,
    "Interpolation": 0.6943535120415824,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998742267699302,
-     "spectral": 0.5678287469687615
+     "frobenius": 0.8465851517911535,
+     "spectral": 0.5272618876508417
     },
     "unconstrained": {
-     "frobenius": 1.6667686442554552,
-     "spectral": 0.9610909589611407
+     "frobenius": 0.9253849761861481,
+     "spectral": 0.5756899953659026
     }
    }
   },
   "39": {
    "fold": 1,
-   "cXGBoost": 0.5228781565374006,
+   "cXGBoost": 0.470331251708732,
    "pGP": 0.46495956487292145,
    "Interpolation": 0.6412462413045811,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999871187739098,
-     "spectral": 0.5523662956899849
+     "frobenius": 0.7696955476505437,
+     "spectral": 0.5279336168552099
     },
     "unconstrained": {
-     "frobenius": 1.5514819707806877,
-     "spectral": 0.8586263485837037
+     "frobenius": 0.7970614431558654,
+     "spectral": 0.5544805832968093
     }
    }
   },
   "40": {
    "fold": 0,
-   "cXGBoost": 0.37165165047526233,
+   "cXGBoost": 0.3628375879259377,
    "pGP": 0.4391667555298178,
    "Interpolation": 0.6742269454591916,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999202712068282,
-     "spectral": 0.678413500365705
+     "frobenius": 0.8457692491611492,
+     "spectral": 0.5243692739541085
     },
     "unconstrained": {
-     "frobenius": 1.2180121649243925,
-     "spectral": 0.8229009630871205
+     "frobenius": 0.9034562371783885,
+     "spectral": 0.5614428333633666
     }
    }
   },
   "41": {
    "fold": 1,
-   "cXGBoost": 0.4258802830791279,
+   "cXGBoost": 0.4602650547731292,
    "pGP": 0.47808490514747015,
    "Interpolation": 0.6418329820990509,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999882011401406,
-     "spectral": 0.6274630936429422
+     "frobenius": 0.7126549591395924,
+     "spectral": 0.4711684121797944
     },
     "unconstrained": {
-     "frobenius": 1.3526059670911028,
-     "spectral": 0.8624279269174169
+     "frobenius": 0.7314757781966883,
+     "spectral": 0.4898249639412707
     }
    }
   },
   "42": {
    "fold": 3,
-   "cXGBoost": 0.4296863906770253,
+   "cXGBoost": 0.41568761475151633,
    "pGP": 0.453711209766446,
    "Interpolation": 0.6853594746686812,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9211924020253976,
-     "spectral": 0.5923535007746237
+     "frobenius": 0.7506960258824681,
+     "spectral": 0.4844207631527005
     },
     "unconstrained": {
-     "frobenius": 0.937415978492237,
-     "spectral": 0.6003809957901202
+     "frobenius": 0.7169526461739043,
+     "spectral": 0.45888650628745115
     }
    }
   },
   "43": {
    "fold": 1,
-   "cXGBoost": 0.573662300361345,
+   "cXGBoost": 0.6274864352752861,
    "pGP": 0.6482068240665243,
    "Interpolation": 0.720498165723226,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.999981989490924,
-     "spectral": 0.5911097318245115
+     "frobenius": 0.7285411670671443,
+     "spectral": 0.4451585076898235
     },
     "unconstrained": {
-     "frobenius": 1.4310215166417026,
-     "spectral": 0.8646093459563168
+     "frobenius": 0.806695104074974,
+     "spectral": 0.4795965121194877
     }
    }
   },
   "44": {
    "fold": 2,
-   "cXGBoost": 0.6700238266029015,
+   "cXGBoost": 0.7228340258694136,
    "pGP": 0.7746391671416742,
    "Interpolation": 0.8584108093618413,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999118777175714,
-     "spectral": 0.6087401161642332
+     "frobenius": 0.8518168534889089,
+     "spectral": 0.5685508981354611
     },
     "unconstrained": {
-     "frobenius": 1.6871171528819364,
-     "spectral": 1.0198370736223095
+     "frobenius": 0.9903986290968131,
+     "spectral": 0.6846749534693091
     }
    }
   },
   "45": {
    "fold": 4,
-   "cXGBoost": 0.49671852126812294,
+   "cXGBoost": 0.5049387298554517,
    "pGP": 0.5395024128986753,
    "Interpolation": 0.7672473975135543,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998739674282343,
-     "spectral": 0.6156921681328271
+     "frobenius": 0.7378085838726356,
+     "spectral": 0.44357744736758475
     },
     "unconstrained": {
-     "frobenius": 1.437815238792852,
-     "spectral": 0.8854094986638313
+     "frobenius": 0.7173627204054847,
+     "spectral": 0.43132407828423486
     }
    }
   },
   "46": {
    "fold": 1,
-   "cXGBoost": 0.21677324131348677,
+   "cXGBoost": 0.16362762994566227,
    "pGP": 0.2835737637892587,
    "Interpolation": 0.6728947834388962,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999276500246226,
-     "spectral": 0.5692864909216281
+     "frobenius": 0.9233681823029243,
+     "spectral": 0.5492330278739923
     },
     "unconstrained": {
-     "frobenius": 1.5796309602866414,
-     "spectral": 0.9195761947673043
+     "frobenius": 1.168565139609989,
+     "spectral": 0.6823773145647667
     }
    }
   },
   "47": {
    "fold": 1,
-   "cXGBoost": 0.2429261282904895,
+   "cXGBoost": 0.18546961470366571,
    "pGP": 0.28054665476847057,
    "Interpolation": 0.7175101346233239,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999472511641172,
-     "spectral": 0.723023383000555
+     "frobenius": 0.8690034488206021,
+     "spectral": 0.5851180028298536
     },
     "unconstrained": {
-     "frobenius": 1.4415916583611088,
-     "spectral": 1.0275842870910292
+     "frobenius": 0.9725346572217523,
+     "spectral": 0.6638884105863989
     }
    }
   },
   "48": {
    "fold": 4,
-   "cXGBoost": 0.1523756820701666,
+   "cXGBoost": 0.21754183804155494,
    "pGP": 0.339626673378477,
    "Interpolation": 0.7666298204067687,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9998286074444328,
-     "spectral": 0.6086744271865031
+     "frobenius": 0.865874355608876,
+     "spectral": 0.5894500720458189
     },
     "unconstrained": {
-     "frobenius": 1.5047411397967885,
-     "spectral": 0.9033130901930844
+     "frobenius": 0.9544367041577206,
+     "spectral": 0.6527213937707516
     }
    }
   },
   "49": {
    "fold": 2,
-   "cXGBoost": 0.5188937252009349,
+   "cXGBoost": 0.32695970313343586,
    "pGP": 0.31460782505818674,
    "Interpolation": 0.5640843723828535,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999566536502174,
-     "spectral": 0.6776118884216433
+     "frobenius": 0.49930820931224346,
+     "spectral": 0.2638583204359935
     },
     "unconstrained": {
-     "frobenius": 1.3559737428734875,
-     "spectral": 0.9569105750075189
+     "frobenius": 0.5154515544548739,
+     "spectral": 0.29252037057503827
     }
    }
   },
   "50": {
    "fold": 2,
-   "cXGBoost": 0.33166140322926047,
+   "cXGBoost": 0.30455229338615836,
    "pGP": 0.3384349717717136,
    "Interpolation": 0.6653752967745478,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999573397041818,
-     "spectral": 0.5892670460061833
+     "frobenius": 0.7273082082399946,
+     "spectral": 0.4295274290061655
     },
     "unconstrained": {
-     "frobenius": 1.2888253564332528,
-     "spectral": 0.7706661817955782
+     "frobenius": 0.8476822945342393,
+     "spectral": 0.5183590785908818
     }
    }
   },
   "51": {
    "fold": 3,
-   "cXGBoost": 0.702773111351228,
+   "cXGBoost": 0.6737579998229805,
    "pGP": 0.6532476857918786,
    "Interpolation": 0.7992477655152908,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999221160389472,
-     "spectral": 0.5374295826692613
+     "frobenius": 0.9255977385250824,
+     "spectral": 0.4950823912159788
     },
     "unconstrained": {
-     "frobenius": 1.723986417438766,
-     "spectral": 0.9372002615799625
+     "frobenius": 1.1346250116590915,
+     "spectral": 0.6162463231679165
     }
    }
   },
   "52": {
    "fold": 0,
-   "cXGBoost": 0.6808947589730794,
+   "cXGBoost": 0.6852321018228235,
    "pGP": 0.7129491620814545,
    "Interpolation": 0.8468982976380708,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999585666767619,
-     "spectral": 0.5968214700866616
+     "frobenius": 0.9111211153753178,
+     "spectral": 0.48900702307804766
     },
     "unconstrained": {
-     "frobenius": 1.242069026098075,
-     "spectral": 0.7465504474558662
+     "frobenius": 1.0459846991125155,
+     "spectral": 0.5703698860442764
     }
    }
   },
   "53": {
    "fold": 0,
-   "cXGBoost": 0.6175971699513501,
+   "cXGBoost": 0.6163370522579192,
    "pGP": 0.659710631270863,
    "Interpolation": 0.8012494156515291,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999585666767619,
-     "spectral": 0.5968214700866616
+     "frobenius": 0.9111211153753178,
+     "spectral": 0.48900702307804766
     },
     "unconstrained": {
-     "frobenius": 1.242069026098075,
-     "spectral": 0.7465504474558662
+     "frobenius": 1.0459846991125155,
+     "spectral": 0.5703698860442764
     }
    }
   },
   "54": {
    "fold": 4,
-   "cXGBoost": 0.3346528077370594,
+   "cXGBoost": 0.3443278154098685,
    "pGP": 0.47146983916686575,
    "Interpolation": 0.8220798095904436,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999511722174129,
-     "spectral": 0.670863856767297
+     "frobenius": 0.9636325864500774,
+     "spectral": 0.6631478062950266
     },
     "unconstrained": {
-     "frobenius": 1.271249863701839,
-     "spectral": 0.8494068671601624
+     "frobenius": 1.135377272156351,
+     "spectral": 0.7851011415128624
     }
    }
   },
   "55": {
    "fold": 0,
-   "cXGBoost": 0.4331243702279862,
+   "cXGBoost": 0.41318738918444425,
    "pGP": 0.391101274424455,
    "Interpolation": 0.9374550168691164,
    "raw": {
     "cXGBoost": {
-     "frobenius": 0.9999585666767619,
-     "spectral": 0.5968214700866616
+     "frobenius": 0.9111211153753178,
+     "spectral": 0.48900702307804766
     },
     "unconstrained": {
-     "frobenius": 1.242069026098075,
-     "spectral": 0.7465504474558662
+     "frobenius": 1.0459846991125155,
+     "spectral": 0.5703698860442764
     }
    }
   }
  },
- "wall_s": 626.9,
+ "wall_s": 9.3,
  "max_abs_diff_from_table2": {
   "cXGBoost": 0.0,
-  "pGP": 6.294542154172689e-08,
+  "pGP": 0.0,
   "Interpolation": 0.0
  }
 }

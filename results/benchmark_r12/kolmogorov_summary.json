@@ -8,12 +8,12 @@
   ],
   "folds": 5,
   "seed": 42,
-  "chart": "pca",
+  "mapping": "pca",
   "snapshot_mode": "native",
   "hyperparameters": {
-    "n_estimators": 150,
-    "learning_rate": 0.3,
-    "max_depth": 3
+    "n_estimators": 50,
+    "learning_rate": 0.1,
+    "max_depth": 2
   },
   "truncation_floor_mean": 0.06567947564109801,
   "truncation_floor_per_point": [
@@ -55,13 +55,13 @@
   "summary": {
     "cXGBoost": {
       "n": 34,
-      "mean": 0.6649514597633629,
-      "std": 0.23671118615708875,
-      "median": 0.7468541877318864,
-      "p90": 0.891944057794878,
-      "p95": 0.9020328030812618,
-      "max": 0.9175670322596138,
-      "min": 0.15099114494289764
+      "mean": 0.6468323082023479,
+      "std": 0.2509805809553336,
+      "median": 0.7231656265396084,
+      "p90": 0.8880469360293717,
+      "p95": 0.9017506190265666,
+      "max": 0.9334759874037011,
+      "min": 0.11402667844325252
     },
     "Interpolation": {
       "n": 34,
@@ -89,13 +89,13 @@
     "statistic": 0.0,
     "p_value": 1.1641532182693481e-10,
     "effect_size": -1.0,
-    "median_diff": -0.13548885221413293
+    "median_diff": -0.1576602559545056
   },
   "paired_test_vs_pgp": {
     "n": 34,
-    "statistic": 255.0,
-    "p_value": 0.4775884869741276,
-    "effect_size": -0.14285714285714285,
-    "median_diff": 0.0007291280207996076
+    "statistic": 97.0,
+    "p_value": 0.00034084846265614033,
+    "effect_size": -0.6739495798319328,
+    "median_diff": -0.013794585766421008
   }
 }

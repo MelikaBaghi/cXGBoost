@@ -12,21 +12,21 @@
   "kolmogorov": {
     "n": 34,
     "cxgboost_lower_than": {
-      "Interpolation": 31,
-      "pGP": 15,
-      "unconstrained + projection": 29,
-      "unconstrained boosting": 19,
-      "single constrained tree": 11
+      "Interpolation": 33,
+      "pGP": 21,
+      "unconstrained + projection": 27,
+      "unconstrained boosting": 23,
+      "single constrained tree": 19
     }
   },
   "ks": {
     "n": 44,
     "cxgboost_lower_than": {
-      "Interpolation": 43,
-      "pGP": 35,
-      "unconstrained + projection": 21,
-      "unconstrained boosting": 11,
-      "single constrained tree": 16
+      "Interpolation": 44,
+      "pGP": 38,
+      "unconstrained + projection": 31,
+      "unconstrained boosting": 19,
+      "single constrained tree": 28
     }
   },
   "beam": {
